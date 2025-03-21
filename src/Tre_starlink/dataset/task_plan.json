@@ -1,0 +1,87 @@
+{
+    "0": {
+        "location": "西湖",
+        "LLA": [
+            120.1533,
+            30.2484,
+            0.007
+        ],
+        "task_priority": 1,
+        "time_priority": 1,
+        "Quality_priority": 5,
+        "Validity_period": [
+            "2025-3-3 09:19:12.565454",
+            "2025-3-5 09:19:12.563434"
+        ],
+        "Observation_mode": "continuous",
+        "location_type": "point"
+    },
+    "1": {
+        "location": "北京",
+        "LLA": [
+            116.4,
+            39.9,
+            0.0435
+        ],
+        "task_priority": 1,
+        "time_priority": 1,
+        "Quality_priority": 5,
+        "Validity_period": [
+            "2025-3-3 09:19:12.565454",
+            "2025-3-5 09:19:12.563434"
+        ],
+        "Observation_mode": "continuous",
+        "location_type": "point"
+    },
+    "2": {
+        "location": "海南",
+        "LLA": [
+            109.78,
+            19.21,
+            0.05
+        ],
+        "task_priority": 5,
+        "time_priority": 1,
+        "Quality_priority": 5,
+        "Validity_period": [
+            "2025-3-3 09:19:12.565454",
+            "2025-3-5 09:19:12.563434"
+        ],
+        "Observation_mode": "continuous",
+        "location_type": "point"
+    },
+    "3": {
+        "location": "西宁",
+        "LLA": [
+            101.74,
+            36.56,
+            2.261
+        ],
+        "task_priority": 2,
+        "time_priority": 1,
+        "Quality_priority": 5,
+        "Validity_period": [
+            "2025-3-3 09:19:12.565454",
+            "2025-3-5 09:19:12.563434"
+        ],
+        "Observation_mode": "continuous",
+        "location_type": "point"
+    },
+    "4": {
+        "location": "斯里兰卡",
+        "LLA": [
+            80.475,
+            7.525,
+            0.007
+        ],
+        "task_priority": 2,
+        "time_priority": 1,
+        "Quality_priority": 5,
+        "Validity_period": [
+            "2025-3-3 09:19:12.565454",
+            "2025-3-5 09:19:12.563434"
+        ],
+        "Observation_mode": "single",
+        "location_type": "point"
+    }
+}
