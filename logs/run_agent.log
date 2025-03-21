@@ -1,0 +1,410 @@
+2025-03-20 15:05:06 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-03-20 15:05:06 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-03-20 15:05:06 - faiss.loader - INFO - Loading faiss.
+2025-03-20 15:05:06 - faiss.loader - INFO - Successfully loaded faiss.
+2025-03-20 15:05:14 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 15:05:16 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 15:05:22 - Agent_1 - INFO - Satellite 1 agent listening on port 5001
+2025-03-20 15:05:22 - Agent_2 - INFO - Satellite 2 agent listening on port 5002
+2025-03-20 15:05:22 - Agent_3 - INFO - Satellite 3 agent listening on port 5003
+2025-03-20 15:05:22 - Agent_4 - INFO - Satellite 4 agent listening on port 5004
+2025-03-20 15:05:22 - Agent_5 - INFO - Satellite 5 agent listening on port 5005
+2025-03-20 15:05:22 - Agent_6 - INFO - Satellite 6 agent listening on port 5006
+2025-03-20 15:05:22 - Agent_7 - INFO - Satellite 7 agent listening on port 5007
+2025-03-20 15:05:22 - Agent_8 - INFO - Satellite 8 agent listening on port 5008
+2025-03-20 15:05:22 - Agent_10 - INFO - Satellite 10 agent listening on port 5010
+2025-03-20 15:05:22 - Agent_9 - INFO - Satellite 9 agent listening on port 5009
+2025-03-20 15:05:22 - Agent_11 - INFO - Satellite 11 agent listening on port 5011
+2025-03-20 15:05:22 - Agent_12 - INFO - Satellite 12 agent listening on port 5012
+2025-03-20 15:05:39 - Satellite_3 - INFO - Satellite 3 updating tasks: ['T:2025-03-08 12:19:14.112 C:SET_ATTITUDE P:20.759332', 'T:2025-03-08 12:20:00.631 C:GET_IMAGE P:2']
+2025-03-20 15:05:39 - Satellite_3 - INFO - Satellite 3: Left Neighbor = 12, Right Neighbor = 1
+2025-03-20 15:05:39 - Satellite_3 - INFO - Called task_update on Satellite 12
+2025-03-20 15:05:39 - Satellite_12 - INFO - Satellite 12 updating tasks: ['T:2025-03-08 12:09:38.132 C:SET_ATTITUDE P:21.749146', 'T:2025-03-08 12:10:26.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:15:32.641 C:SET_ATTITUDE P:10.254166', 'T:2025-03-08 12:16:00.631 C:GET_IMAGE P:2']
+2025-03-20 15:05:39 - Satellite_12 - INFO - Satellite 12: Left Neighbor = 11, Right Neighbor = 3
+2025-03-20 15:05:39 - Satellite_3 - INFO - Called task_update on Satellite 1
+2025-03-20 15:05:39 - Satellite_1 - INFO - Satellite 1 updating tasks: ['T:2025-03-08 12:22:49.899 C:SET_ATTITUDE P:29.615673', 'T:2025-03-08 12:23:54.131 C:GET_IMAGE P:2']
+2025-03-20 15:05:39 - Satellite_1 - INFO - Satellite 1: Left Neighbor = 3, Right Neighbor = 2
+2025-03-20 15:05:39 - Satellite_12 - INFO - Called task_update on Satellite 11
+2025-03-20 15:05:39 - Satellite_3 - INFO - Satellite 3 updating tasks: ['T:2025-03-08 12:19:14.112 C:SET_ATTITUDE P:20.759332', 'T:2025-03-08 12:20:00.631 C:GET_IMAGE P:2']
+2025-03-20 15:05:39 - Satellite_11 - INFO - Satellite 11 updating tasks: ['T:2025-03-08 12:05:52.173 C:SET_ATTITUDE P:13.478829', 'T:2025-03-08 12:06:24.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:11:24.182 C:SET_ATTITUDE P:-1.245339', 'T:2025-03-08 12:11:58.631 C:GET_IMAGE P:2']
+2025-03-20 15:05:39 - Satellite_3 - INFO - Satellite 3: Left Neighbor = 12, Right Neighbor = 1
+2025-03-20 15:05:39 - Satellite_11 - INFO - Satellite 11: Left Neighbor = 10, Right Neighbor = 12
+2025-03-20 15:05:39 - Satellite_12 - INFO - Satellite 12 updating tasks: ['T:2025-03-08 12:09:38.132 C:SET_ATTITUDE P:21.749146', 'T:2025-03-08 12:10:26.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:15:32.641 C:SET_ATTITUDE P:10.254166', 'T:2025-03-08 12:16:00.631 C:GET_IMAGE P:2']
+2025-03-20 15:05:39 - Satellite_3 - INFO - Called task_update on Satellite 12
+2025-03-20 15:05:39 - Satellite_12 - INFO - Satellite 12: Left Neighbor = 11, Right Neighbor = 3
+2025-03-20 15:05:39 - Satellite_2 - INFO - Satellite 2 updating tasks: ['T:2025-03-08 14:05:31.646 C:SET_ATTITUDE P:7.992345', 'T:2025-03-08 14:05:52.631 C:GET_IMAGE P:4']
+2025-03-20 15:05:39 - Satellite_1 - INFO - Called task_update on Satellite 2
+2025-03-20 15:05:39 - Satellite_11 - INFO - Called task_update on Satellite 10
+2025-03-20 15:05:39 - Satellite_3 - INFO - Called task_update on Satellite 1
+2025-03-20 15:05:39 - Satellite_10 - INFO - Satellite 10 updating tasks: ['T:2025-03-07 12:21:52.056 C:SET_ATTITUDE P:27.287345', 'T:2025-03-07 12:22:51.631 C:GET_IMAGE P:2', 'T:2025-03-08 12:01:31.051 C:SET_ATTITUDE P:4.497409', 'T:2025-03-08 12:02:21.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:07:17.429 C:SET_ATTITUDE P:-12.603305', 'T:2025-03-08 12:07:56.631 C:GET_IMAGE P:2']
+2025-03-20 15:05:39 - Satellite_2 - INFO - Satellite 2: Left Neighbor = 1, Right Neighbor = 4
+2025-03-20 15:05:39 - Satellite_12 - INFO - Called task_update on Satellite 11
+2025-03-20 15:05:39 - Satellite_1 - INFO - Satellite 1 updating tasks: ['T:2025-03-08 12:22:49.899 C:SET_ATTITUDE P:29.615673', 'T:2025-03-08 12:23:54.131 C:GET_IMAGE P:2']
+2025-03-20 15:05:39 - Satellite_10 - INFO - Satellite 10: Left Neighbor = 9, Right Neighbor = 11
+2025-03-20 15:05:39 - Satellite_11 - INFO - Satellite 11 updating tasks: ['T:2025-03-08 12:05:52.173 C:SET_ATTITUDE P:13.478829', 'T:2025-03-08 12:06:24.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:11:24.182 C:SET_ATTITUDE P:-1.245339', 'T:2025-03-08 12:11:58.631 C:GET_IMAGE P:2']
+2025-03-20 15:05:39 - Satellite_2 - INFO - Called task_update on Satellite 4
+2025-03-20 15:05:39 - Satellite_1 - INFO - Satellite 1: Left Neighbor = 3, Right Neighbor = 2
+2025-03-20 15:05:39 - Satellite_11 - INFO - Satellite 11: Left Neighbor = 10, Right Neighbor = 12
+2025-03-20 15:05:39 - Satellite_10 - INFO - Called task_update on Satellite 9
+2025-03-20 15:05:39 - Satellite_4 - INFO - Satellite 4 updating tasks: []
+2025-03-20 15:05:39 - Satellite_1 - INFO - Called task_update on Satellite 2
+2025-03-20 15:05:39 - Satellite_2 - INFO - Satellite 2 updating tasks: ['T:2025-03-08 14:05:31.646 C:SET_ATTITUDE P:7.992345', 'T:2025-03-08 14:05:52.631 C:GET_IMAGE P:4']
+2025-03-20 15:05:39 - Satellite_2 - INFO - Satellite 2: Left Neighbor = 1, Right Neighbor = 4
+2025-03-20 15:05:39 - Satellite_10 - INFO - Satellite 10 updating tasks: ['T:2025-03-07 12:21:52.056 C:SET_ATTITUDE P:27.287345', 'T:2025-03-07 12:22:51.631 C:GET_IMAGE P:2', 'T:2025-03-08 12:01:31.051 C:SET_ATTITUDE P:4.497409', 'T:2025-03-08 12:02:21.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:07:17.429 C:SET_ATTITUDE P:-12.603305', 'T:2025-03-08 12:07:56.631 C:GET_IMAGE P:2']
+2025-03-20 15:05:39 - Satellite_11 - INFO - Called task_update on Satellite 10
+2025-03-20 15:05:39 - Satellite_4 - INFO - Satellite 4: Left Neighbor = 2, Right Neighbor = 5
+2025-03-20 15:05:39 - Satellite_9 - INFO - Satellite 9 updating tasks: ['T:2025-03-07 12:12:20.678 C:SET_ATTITUDE P:26.976146', 'T:2025-03-07 12:13:19.631 C:GET_IMAGE P:1', 'T:2025-03-07 12:18:31.389 C:SET_ATTITUDE P:17.855231', 'T:2025-03-07 12:18:54.631 C:GET_IMAGE P:2', 'T:2025-03-08 11:57:33.206 C:SET_ATTITUDE P:-4.607069', 'T:2025-03-08 11:58:23.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:03:16.762 C:SET_ATTITUDE P:-22.791500', 'T:2025-03-08 12:03:58.131 C:GET_IMAGE P:2']
+2025-03-20 15:05:39 - Satellite_10 - INFO - Satellite 10: Left Neighbor = 9, Right Neighbor = 11
+2025-03-20 15:05:39 - Satellite_2 - INFO - Called task_update on Satellite 4
+2025-03-20 15:05:39 - Satellite_9 - INFO - Satellite 9: Left Neighbor = None, Right Neighbor = 10
+2025-03-20 15:05:39 - Satellite_4 - INFO - Called task_update on Satellite 5
+2025-03-20 15:05:39 - Satellite_10 - INFO - Called task_update on Satellite 9
+2025-03-20 15:05:39 - Satellite_9 - INFO - Satellite 9 updating tasks: ['T:2025-03-07 12:12:20.678 C:SET_ATTITUDE P:26.976146', 'T:2025-03-07 12:13:19.631 C:GET_IMAGE P:1', 'T:2025-03-07 12:18:31.389 C:SET_ATTITUDE P:17.855231', 'T:2025-03-07 12:18:54.631 C:GET_IMAGE P:2', 'T:2025-03-08 11:57:33.206 C:SET_ATTITUDE P:-4.607069', 'T:2025-03-08 11:58:23.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:03:16.762 C:SET_ATTITUDE P:-22.791500', 'T:2025-03-08 12:03:58.131 C:GET_IMAGE P:2']
+2025-03-20 15:05:39 - Satellite_4 - INFO - Satellite 4 updating tasks: []
+2025-03-20 15:05:39 - Satellite_5 - INFO - Satellite 5 updating tasks: ['T:2025-03-07 12:45:03.356 C:SET_ATTITUDE P:-23.387573', 'T:2025-03-07 12:45:55.131 C:GET_IMAGE P:3']
+2025-03-20 15:05:39 - Satellite_9 - INFO - Satellite 9: Left Neighbor = None, Right Neighbor = 10
+2025-03-20 15:05:39 - Satellite_4 - INFO - Satellite 4: Left Neighbor = 2, Right Neighbor = 5
+2025-03-20 15:05:39 - Satellite_5 - INFO - Satellite 5: Left Neighbor = 4, Right Neighbor = 6
+2025-03-20 15:05:39 - Satellite_4 - INFO - Called task_update on Satellite 5
+2025-03-20 15:05:39 - Satellite_5 - INFO - Called task_update on Satellite 6
+2025-03-20 15:05:39 - Satellite_6 - INFO - Satellite 6 updating tasks: ['T:2025-03-07 12:48:59.334 C:SET_ATTITUDE P:-15.648315', 'T:2025-03-07 12:49:35.631 C:GET_IMAGE P:3']
+2025-03-20 15:05:39 - Satellite_6 - INFO - Satellite 6: Left Neighbor = 5, Right Neighbor = 7
+2025-03-20 15:05:39 - Satellite_6 - INFO - Called task_update on Satellite 7
+2025-03-20 15:05:39 - Satellite_5 - INFO - Satellite 5 updating tasks: ['T:2025-03-07 12:45:03.356 C:SET_ATTITUDE P:-23.387573', 'T:2025-03-07 12:45:55.131 C:GET_IMAGE P:3']
+2025-03-20 15:05:39 - Satellite_7 - INFO - Satellite 7 updating tasks: ['T:2025-03-07 12:53:02.131 C:SET_ATTITUDE P:-7.000011', 'T:2025-03-07 12:53:21.131 C:GET_IMAGE P:3']
+2025-03-20 15:05:39 - Satellite_5 - INFO - Satellite 5: Left Neighbor = 4, Right Neighbor = 6
+2025-03-20 15:05:39 - Satellite_7 - INFO - Satellite 7: Left Neighbor = 6, Right Neighbor = 8
+2025-03-20 15:05:39 - Satellite_5 - INFO - Called task_update on Satellite 6
+2025-03-20 15:05:39 - Satellite_6 - INFO - Satellite 6 updating tasks: ['T:2025-03-07 12:48:59.334 C:SET_ATTITUDE P:-15.648315', 'T:2025-03-07 12:49:35.631 C:GET_IMAGE P:3']
+2025-03-20 15:05:39 - Satellite_6 - INFO - Satellite 6: Left Neighbor = 5, Right Neighbor = 7
+2025-03-20 15:05:39 - Satellite_6 - INFO - Called task_update on Satellite 7
+2025-03-20 15:05:39 - Satellite_7 - INFO - Called task_update on Satellite 8
+2025-03-20 15:05:39 - Satellite_8 - INFO - Satellite 8 updating tasks: ['T:2025-03-07 12:57:04.449 C:SET_ATTITUDE P:2.340807', 'T:2025-03-07 12:57:14.131 C:GET_IMAGE P:3']
+2025-03-20 15:05:39 - Satellite_7 - INFO - Satellite 7 updating tasks: ['T:2025-03-07 12:53:02.131 C:SET_ATTITUDE P:-7.000011', 'T:2025-03-07 12:53:21.131 C:GET_IMAGE P:3']
+2025-03-20 15:05:39 - Satellite_7 - INFO - Satellite 7: Left Neighbor = 6, Right Neighbor = 8
+2025-03-20 15:05:39 - Satellite_8 - INFO - Satellite 8: Left Neighbor = 7, Right Neighbor = None
+2025-03-20 15:05:39 - Satellite_7 - INFO - Called task_update on Satellite 8
+2025-03-20 15:05:39 - Satellite_8 - INFO - Satellite 8 updating tasks: ['T:2025-03-07 12:57:04.449 C:SET_ATTITUDE P:2.340807', 'T:2025-03-07 12:57:14.131 C:GET_IMAGE P:3']
+2025-03-20 15:05:39 - Satellite_8 - INFO - Satellite 8: Left Neighbor = 7, Right Neighbor = None
+2025-03-20 15:05:44 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 15:06:18 - Satellite_9 - INFO - Satellite 9 executing task: C:SET_ATTITUDE P:26.976146
+2025-03-20 15:06:19 - Satellite_9 - INFO - Satellite 9 set target attitude with roll angle 26.976146°
+2025-03-20 15:06:19 - Satellite_9 - INFO - Satellite 9 executing task: C:GET_IMAGE P:1
+2025-03-20 15:06:19 - Satellite_9 - INFO - Satellite 9 agent get image
+2025-03-20 15:06:19 - Satellite_9 - ERROR - Error executing task: [Errno 111] Connection refused
+2025-03-20 15:06:51 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 15:06:53 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 15:07:10 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-03-20 15:07:10 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-03-20 15:07:10 - faiss.loader - INFO - Loading faiss.
+2025-03-20 15:07:10 - faiss.loader - INFO - Successfully loaded faiss.
+2025-03-20 15:07:17 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 15:07:18 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 15:07:24 - Agent_1 - INFO - Satellite 1 agent listening on port 5001
+2025-03-20 15:07:24 - Agent_2 - INFO - Satellite 2 agent listening on port 5002
+2025-03-20 15:07:24 - Agent_3 - INFO - Satellite 3 agent listening on port 5003
+2025-03-20 15:07:24 - Agent_4 - INFO - Satellite 4 agent listening on port 5004
+2025-03-20 15:07:24 - Agent_5 - INFO - Satellite 5 agent listening on port 5005
+2025-03-20 15:07:24 - Agent_6 - INFO - Satellite 6 agent listening on port 5006
+2025-03-20 15:07:24 - Agent_8 - INFO - Satellite 8 agent listening on port 5008
+2025-03-20 15:07:24 - Agent_9 - INFO - Satellite 9 agent listening on port 5009
+2025-03-20 15:07:24 - Agent_7 - INFO - Satellite 7 agent listening on port 5007
+2025-03-20 15:07:24 - Agent_10 - INFO - Satellite 10 agent listening on port 5010
+2025-03-20 15:07:24 - Agent_11 - INFO - Satellite 11 agent listening on port 5011
+2025-03-20 15:07:24 - Agent_12 - INFO - Satellite 12 agent listening on port 5012
+2025-03-20 15:07:42 - Satellite_3 - INFO - Satellite 3 updating tasks: ['T:2025-03-08 12:19:14.112 C:SET_ATTITUDE P:20.759332', 'T:2025-03-08 12:20:00.631 C:GET_IMAGE P:2']
+2025-03-20 15:07:42 - Satellite_3 - INFO - Satellite 3: Left Neighbor = 12, Right Neighbor = 1
+2025-03-20 15:07:42 - Satellite_12 - INFO - Satellite 12 updating tasks: ['T:2025-03-08 12:09:38.132 C:SET_ATTITUDE P:21.749146', 'T:2025-03-08 12:10:26.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:15:32.641 C:SET_ATTITUDE P:10.254166', 'T:2025-03-08 12:16:00.631 C:GET_IMAGE P:2']
+2025-03-20 15:07:42 - Satellite_3 - INFO - Called task_update on Satellite 12
+2025-03-20 15:07:42 - Satellite_12 - INFO - Satellite 12: Left Neighbor = 11, Right Neighbor = 3
+2025-03-20 15:07:42 - Satellite_3 - INFO - Called task_update on Satellite 1
+2025-03-20 15:07:42 - Satellite_1 - INFO - Satellite 1 updating tasks: ['T:2025-03-08 12:22:49.899 C:SET_ATTITUDE P:29.615673', 'T:2025-03-08 12:23:54.131 C:GET_IMAGE P:2']
+2025-03-20 15:07:42 - Satellite_1 - INFO - Satellite 1: Left Neighbor = 3, Right Neighbor = 2
+2025-03-20 15:07:42 - Satellite_12 - INFO - Called task_update on Satellite 11
+2025-03-20 15:07:42 - Satellite_3 - INFO - Satellite 3 updating tasks: ['T:2025-03-08 12:19:14.112 C:SET_ATTITUDE P:20.759332', 'T:2025-03-08 12:20:00.631 C:GET_IMAGE P:2']
+2025-03-20 15:07:42 - Satellite_3 - INFO - Satellite 3: Left Neighbor = 12, Right Neighbor = 1
+2025-03-20 15:07:42 - Satellite_3 - INFO - Called task_update on Satellite 12
+2025-03-20 15:07:42 - Satellite_12 - INFO - Satellite 12 updating tasks: ['T:2025-03-08 12:09:38.132 C:SET_ATTITUDE P:21.749146', 'T:2025-03-08 12:10:26.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:15:32.641 C:SET_ATTITUDE P:10.254166', 'T:2025-03-08 12:16:00.631 C:GET_IMAGE P:2']
+2025-03-20 15:07:42 - Satellite_12 - INFO - Satellite 12: Left Neighbor = 11, Right Neighbor = 3
+2025-03-20 15:07:42 - Satellite_1 - INFO - Called task_update on Satellite 2
+2025-03-20 15:07:42 - Satellite_11 - INFO - Satellite 11 updating tasks: ['T:2025-03-08 12:05:52.173 C:SET_ATTITUDE P:13.478829', 'T:2025-03-08 12:06:24.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:11:24.182 C:SET_ATTITUDE P:-1.245339', 'T:2025-03-08 12:11:58.631 C:GET_IMAGE P:2']
+2025-03-20 15:07:42 - Satellite_3 - INFO - Called task_update on Satellite 1
+2025-03-20 15:07:42 - Satellite_2 - INFO - Satellite 2 updating tasks: ['T:2025-03-08 14:05:31.646 C:SET_ATTITUDE P:7.992345', 'T:2025-03-08 14:05:52.631 C:GET_IMAGE P:4']
+2025-03-20 15:07:42 - Satellite_12 - INFO - Called task_update on Satellite 11
+2025-03-20 15:07:42 - Satellite_1 - INFO - Satellite 1 updating tasks: ['T:2025-03-08 12:22:49.899 C:SET_ATTITUDE P:29.615673', 'T:2025-03-08 12:23:54.131 C:GET_IMAGE P:2']
+2025-03-20 15:07:42 - Satellite_11 - INFO - Satellite 11: Left Neighbor = 10, Right Neighbor = 12
+2025-03-20 15:07:42 - Satellite_2 - INFO - Satellite 2: Left Neighbor = 1, Right Neighbor = 4
+2025-03-20 15:07:42 - Satellite_1 - INFO - Satellite 1: Left Neighbor = 3, Right Neighbor = 2
+2025-03-20 15:07:42 - Satellite_11 - INFO - Called task_update on Satellite 10
+2025-03-20 15:07:42 - Satellite_10 - INFO - Satellite 10 updating tasks: ['T:2025-03-07 12:21:52.056 C:SET_ATTITUDE P:27.287345', 'T:2025-03-07 12:22:51.631 C:GET_IMAGE P:2', 'T:2025-03-08 12:01:31.051 C:SET_ATTITUDE P:4.497409', 'T:2025-03-08 12:02:21.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:07:17.429 C:SET_ATTITUDE P:-12.603305', 'T:2025-03-08 12:07:56.631 C:GET_IMAGE P:2']
+2025-03-20 15:07:42 - Satellite_1 - INFO - Called task_update on Satellite 2
+2025-03-20 15:07:42 - Satellite_2 - INFO - Called task_update on Satellite 4
+2025-03-20 15:07:42 - Satellite_10 - INFO - Satellite 10: Left Neighbor = 9, Right Neighbor = 11
+2025-03-20 15:07:42 - Satellite_11 - INFO - Satellite 11 updating tasks: ['T:2025-03-08 12:05:52.173 C:SET_ATTITUDE P:13.478829', 'T:2025-03-08 12:06:24.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:11:24.182 C:SET_ATTITUDE P:-1.245339', 'T:2025-03-08 12:11:58.631 C:GET_IMAGE P:2']
+2025-03-20 15:07:42 - Satellite_11 - INFO - Satellite 11: Left Neighbor = 10, Right Neighbor = 12
+2025-03-20 15:07:42 - Satellite_4 - INFO - Satellite 4 updating tasks: []
+2025-03-20 15:07:42 - Satellite_2 - INFO - Satellite 2 updating tasks: ['T:2025-03-08 14:05:31.646 C:SET_ATTITUDE P:7.992345', 'T:2025-03-08 14:05:52.631 C:GET_IMAGE P:4']
+2025-03-20 15:07:42 - Satellite_2 - INFO - Satellite 2: Left Neighbor = 1, Right Neighbor = 4
+2025-03-20 15:07:42 - Satellite_10 - INFO - Called task_update on Satellite 9
+2025-03-20 15:07:42 - Satellite_9 - INFO - Satellite 9 updating tasks: ['T:2025-03-07 12:12:20.678 C:SET_ATTITUDE P:26.976146', 'T:2025-03-07 12:13:19.631 C:GET_IMAGE P:1', 'T:2025-03-07 12:18:31.389 C:SET_ATTITUDE P:17.855231', 'T:2025-03-07 12:18:54.631 C:GET_IMAGE P:2', 'T:2025-03-08 11:57:33.206 C:SET_ATTITUDE P:-4.607069', 'T:2025-03-08 11:58:23.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:03:16.762 C:SET_ATTITUDE P:-22.791500', 'T:2025-03-08 12:03:58.131 C:GET_IMAGE P:2']
+2025-03-20 15:07:42 - Satellite_4 - INFO - Satellite 4: Left Neighbor = 2, Right Neighbor = 5
+2025-03-20 15:07:42 - Satellite_11 - INFO - Called task_update on Satellite 10
+2025-03-20 15:07:42 - Satellite_2 - INFO - Called task_update on Satellite 4
+2025-03-20 15:07:42 - Satellite_10 - INFO - Satellite 10 updating tasks: ['T:2025-03-07 12:21:52.056 C:SET_ATTITUDE P:27.287345', 'T:2025-03-07 12:22:51.631 C:GET_IMAGE P:2', 'T:2025-03-08 12:01:31.051 C:SET_ATTITUDE P:4.497409', 'T:2025-03-08 12:02:21.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:07:17.429 C:SET_ATTITUDE P:-12.603305', 'T:2025-03-08 12:07:56.631 C:GET_IMAGE P:2']
+2025-03-20 15:07:42 - Satellite_9 - INFO - Satellite 9: Left Neighbor = None, Right Neighbor = 10
+2025-03-20 15:07:42 - Satellite_4 - INFO - Called task_update on Satellite 5
+2025-03-20 15:07:42 - Satellite_5 - INFO - Satellite 5 updating tasks: ['T:2025-03-07 12:45:03.356 C:SET_ATTITUDE P:-23.387573', 'T:2025-03-07 12:45:55.131 C:GET_IMAGE P:3']
+2025-03-20 15:07:42 - Satellite_10 - INFO - Satellite 10: Left Neighbor = 9, Right Neighbor = 11
+2025-03-20 15:07:42 - Satellite_4 - INFO - Satellite 4 updating tasks: []
+2025-03-20 15:07:42 - Satellite_4 - INFO - Satellite 4: Left Neighbor = 2, Right Neighbor = 5
+2025-03-20 15:07:42 - Satellite_5 - INFO - Satellite 5: Left Neighbor = 4, Right Neighbor = 6
+2025-03-20 15:07:42 - Satellite_4 - INFO - Called task_update on Satellite 5
+2025-03-20 15:07:42 - Satellite_9 - INFO - Satellite 9 updating tasks: ['T:2025-03-07 12:12:20.678 C:SET_ATTITUDE P:26.976146', 'T:2025-03-07 12:13:19.631 C:GET_IMAGE P:1', 'T:2025-03-07 12:18:31.389 C:SET_ATTITUDE P:17.855231', 'T:2025-03-07 12:18:54.631 C:GET_IMAGE P:2', 'T:2025-03-08 11:57:33.206 C:SET_ATTITUDE P:-4.607069', 'T:2025-03-08 11:58:23.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:03:16.762 C:SET_ATTITUDE P:-22.791500', 'T:2025-03-08 12:03:58.131 C:GET_IMAGE P:2']
+2025-03-20 15:07:42 - Satellite_5 - INFO - Called task_update on Satellite 6
+2025-03-20 15:07:42 - Satellite_10 - INFO - Called task_update on Satellite 9
+2025-03-20 15:07:42 - Satellite_9 - INFO - Satellite 9: Left Neighbor = None, Right Neighbor = 10
+2025-03-20 15:07:42 - Satellite_6 - INFO - Satellite 6 updating tasks: ['T:2025-03-07 12:48:59.334 C:SET_ATTITUDE P:-15.648315', 'T:2025-03-07 12:49:35.631 C:GET_IMAGE P:3']
+2025-03-20 15:07:42 - Satellite_5 - INFO - Satellite 5 updating tasks: ['T:2025-03-07 12:45:03.356 C:SET_ATTITUDE P:-23.387573', 'T:2025-03-07 12:45:55.131 C:GET_IMAGE P:3']
+2025-03-20 15:07:42 - Satellite_5 - INFO - Satellite 5: Left Neighbor = 4, Right Neighbor = 6
+2025-03-20 15:07:42 - Satellite_6 - INFO - Satellite 6: Left Neighbor = 5, Right Neighbor = 7
+2025-03-20 15:07:42 - Satellite_5 - INFO - Called task_update on Satellite 6
+2025-03-20 15:07:42 - Satellite_7 - INFO - Satellite 7 updating tasks: ['T:2025-03-07 12:53:02.131 C:SET_ATTITUDE P:-7.000011', 'T:2025-03-07 12:53:21.131 C:GET_IMAGE P:3']
+2025-03-20 15:07:42 - Satellite_7 - INFO - Satellite 7: Left Neighbor = 6, Right Neighbor = 8
+2025-03-20 15:07:42 - Satellite_6 - INFO - Called task_update on Satellite 7
+2025-03-20 15:07:42 - Satellite_8 - INFO - Satellite 8 updating tasks: ['T:2025-03-07 12:57:04.449 C:SET_ATTITUDE P:2.340807', 'T:2025-03-07 12:57:14.131 C:GET_IMAGE P:3']
+2025-03-20 15:07:42 - Satellite_8 - INFO - Satellite 8: Left Neighbor = 7, Right Neighbor = None
+2025-03-20 15:07:42 - Satellite_6 - INFO - Satellite 6 updating tasks: ['T:2025-03-07 12:48:59.334 C:SET_ATTITUDE P:-15.648315', 'T:2025-03-07 12:49:35.631 C:GET_IMAGE P:3']
+2025-03-20 15:07:42 - Satellite_7 - INFO - Called task_update on Satellite 8
+2025-03-20 15:07:42 - Satellite_6 - INFO - Satellite 6: Left Neighbor = 5, Right Neighbor = 7
+2025-03-20 15:07:42 - Satellite_6 - INFO - Called task_update on Satellite 7
+2025-03-20 15:07:42 - Satellite_7 - INFO - Satellite 7 updating tasks: ['T:2025-03-07 12:53:02.131 C:SET_ATTITUDE P:-7.000011', 'T:2025-03-07 12:53:21.131 C:GET_IMAGE P:3']
+2025-03-20 15:07:42 - Satellite_7 - INFO - Satellite 7: Left Neighbor = 6, Right Neighbor = 8
+2025-03-20 15:07:42 - Satellite_7 - INFO - Called task_update on Satellite 8
+2025-03-20 15:07:42 - Satellite_8 - INFO - Satellite 8 updating tasks: ['T:2025-03-07 12:57:04.449 C:SET_ATTITUDE P:2.340807', 'T:2025-03-07 12:57:14.131 C:GET_IMAGE P:3']
+2025-03-20 15:07:42 - Satellite_8 - INFO - Satellite 8: Left Neighbor = 7, Right Neighbor = None
+2025-03-20 15:07:52 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 15:08:19 - Satellite_9 - INFO - Satellite 9 executing task: C:SET_ATTITUDE P:26.976146
+2025-03-20 15:08:19 - Satellite_9 - INFO - Satellite 9 set target attitude with roll angle 26.976146°
+2025-03-20 15:08:19 - Satellite_9 - INFO - Satellite 9 executing task: C:GET_IMAGE P:1
+2025-03-20 15:08:19 - Satellite_9 - INFO - Satellite 9 agent get image
+2025-03-20 15:08:19 - Satellite_9 - ERROR - Error executing task: [Errno 111] Connection refused
+2025-03-20 15:08:57 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 15:08:58 - httpx - INFO - HTTP Request: POST https://api.agno.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-20 15:08:58 - TaskPlanningAgent - INFO - Agent response: None
+2025-03-20 15:16:07 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-03-20 15:16:07 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-03-20 15:16:07 - faiss.loader - INFO - Loading faiss.
+2025-03-20 15:16:07 - faiss.loader - INFO - Successfully loaded faiss.
+2025-03-20 15:16:22 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 15:16:24 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 15:16:30 - Agent_1 - INFO - Satellite 1 agent listening on port 5001
+2025-03-20 15:16:30 - Agent_2 - INFO - Satellite 2 agent listening on port 5002
+2025-03-20 15:16:30 - Agent_3 - INFO - Satellite 3 agent listening on port 5003
+2025-03-20 15:16:30 - Agent_5 - INFO - Satellite 5 agent listening on port 5005
+2025-03-20 15:16:30 - Agent_6 - INFO - Satellite 6 agent listening on port 5006
+2025-03-20 15:16:30 - Agent_7 - INFO - Satellite 7 agent listening on port 5007
+2025-03-20 15:16:30 - Agent_4 - INFO - Satellite 4 agent listening on port 5004
+2025-03-20 15:16:30 - Agent_8 - INFO - Satellite 8 agent listening on port 5008
+2025-03-20 15:16:30 - Agent_9 - INFO - Satellite 9 agent listening on port 5009
+2025-03-20 15:16:30 - Agent_10 - INFO - Satellite 10 agent listening on port 5010
+2025-03-20 15:16:30 - Agent_11 - INFO - Satellite 11 agent listening on port 5011
+2025-03-20 15:16:30 - Agent_12 - INFO - Satellite 12 agent listening on port 5012
+2025-03-20 15:16:45 - Satellite_3 - INFO - Satellite 3 updating tasks: ['T:2025-03-08 12:19:14.112 C:SET_ATTITUDE P:20.759332', 'T:2025-03-08 12:20:00.631 C:GET_IMAGE P:2']
+2025-03-20 15:16:45 - Satellite_3 - INFO - Satellite 3: Left Neighbor = 12, Right Neighbor = 1
+2025-03-20 15:16:45 - Satellite_3 - INFO - Called task_update on Satellite 12
+2025-03-20 15:16:45 - Satellite_3 - INFO - Called task_update on Satellite 1
+2025-03-20 15:16:45 - Satellite_3 - INFO - Satellite 3 updating tasks: ['T:2025-03-08 12:19:14.112 C:SET_ATTITUDE P:20.759332', 'T:2025-03-08 12:20:00.631 C:GET_IMAGE P:2']
+2025-03-20 15:16:45 - Satellite_3 - INFO - Satellite 3: Left Neighbor = 12, Right Neighbor = 1
+2025-03-20 15:16:45 - Satellite_12 - INFO - Satellite 12 updating tasks: ['T:2025-03-08 12:09:38.132 C:SET_ATTITUDE P:21.749146', 'T:2025-03-08 12:10:26.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:15:32.641 C:SET_ATTITUDE P:10.254166', 'T:2025-03-08 12:16:00.631 C:GET_IMAGE P:2']
+2025-03-20 15:16:45 - Satellite_12 - INFO - Satellite 12: Left Neighbor = 11, Right Neighbor = 3
+2025-03-20 15:16:45 - Satellite_3 - INFO - Called task_update on Satellite 12
+2025-03-20 15:16:45 - Satellite_12 - INFO - Called task_update on Satellite 11
+2025-03-20 15:16:45 - Satellite_3 - INFO - Called task_update on Satellite 1
+2025-03-20 15:16:45 - Satellite_12 - INFO - Satellite 12 updating tasks: ['T:2025-03-08 12:09:38.132 C:SET_ATTITUDE P:21.749146', 'T:2025-03-08 12:10:26.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:15:32.641 C:SET_ATTITUDE P:10.254166', 'T:2025-03-08 12:16:00.631 C:GET_IMAGE P:2']
+2025-03-20 15:16:45 - Satellite_11 - INFO - Satellite 11 updating tasks: ['T:2025-03-08 12:05:52.173 C:SET_ATTITUDE P:13.478829', 'T:2025-03-08 12:06:24.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:11:24.182 C:SET_ATTITUDE P:-1.245339', 'T:2025-03-08 12:11:58.631 C:GET_IMAGE P:2']
+2025-03-20 15:16:45 - Satellite_11 - INFO - Satellite 11: Left Neighbor = 10, Right Neighbor = 12
+2025-03-20 15:16:45 - Satellite_12 - INFO - Satellite 12: Left Neighbor = 11, Right Neighbor = 3
+2025-03-20 15:16:45 - Satellite_1 - INFO - Satellite 1 updating tasks: ['T:2025-03-08 12:22:49.899 C:SET_ATTITUDE P:29.615673', 'T:2025-03-08 12:23:54.131 C:GET_IMAGE P:2']
+2025-03-20 15:16:45 - Satellite_12 - INFO - Called task_update on Satellite 11
+2025-03-20 15:16:45 - Satellite_11 - INFO - Called task_update on Satellite 10
+2025-03-20 15:16:45 - Satellite_1 - INFO - Satellite 1: Left Neighbor = 3, Right Neighbor = 2
+2025-03-20 15:16:45 - Satellite_11 - INFO - Satellite 11 updating tasks: ['T:2025-03-08 12:05:52.173 C:SET_ATTITUDE P:13.478829', 'T:2025-03-08 12:06:24.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:11:24.182 C:SET_ATTITUDE P:-1.245339', 'T:2025-03-08 12:11:58.631 C:GET_IMAGE P:2']
+2025-03-20 15:16:45 - Satellite_11 - INFO - Satellite 11: Left Neighbor = 10, Right Neighbor = 12
+2025-03-20 15:16:45 - Satellite_1 - INFO - Called task_update on Satellite 2
+2025-03-20 15:16:45 - Satellite_11 - INFO - Called task_update on Satellite 10
+2025-03-20 15:16:45 - Satellite_10 - INFO - Satellite 10 updating tasks: ['T:2025-03-07 12:21:52.056 C:SET_ATTITUDE P:27.287345', 'T:2025-03-07 12:22:51.631 C:GET_IMAGE P:2', 'T:2025-03-08 12:01:31.051 C:SET_ATTITUDE P:4.497409', 'T:2025-03-08 12:02:21.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:07:17.429 C:SET_ATTITUDE P:-12.603305', 'T:2025-03-08 12:07:56.631 C:GET_IMAGE P:2']
+2025-03-20 15:16:45 - Satellite_1 - INFO - Satellite 1 updating tasks: ['T:2025-03-08 12:22:49.899 C:SET_ATTITUDE P:29.615673', 'T:2025-03-08 12:23:54.131 C:GET_IMAGE P:2']
+2025-03-20 15:16:45 - Satellite_2 - INFO - Satellite 2 updating tasks: ['T:2025-03-08 14:05:31.646 C:SET_ATTITUDE P:7.992345', 'T:2025-03-08 14:05:52.631 C:GET_IMAGE P:4']
+2025-03-20 15:16:45 - Satellite_10 - INFO - Satellite 10: Left Neighbor = 9, Right Neighbor = 11
+2025-03-20 15:16:45 - Satellite_1 - INFO - Satellite 1: Left Neighbor = 3, Right Neighbor = 2
+2025-03-20 15:16:45 - Satellite_2 - INFO - Satellite 2: Left Neighbor = 1, Right Neighbor = 4
+2025-03-20 15:16:45 - Satellite_1 - INFO - Called task_update on Satellite 2
+2025-03-20 15:16:45 - Satellite_9 - INFO - Satellite 9 updating tasks: ['T:2025-03-07 12:12:20.678 C:SET_ATTITUDE P:26.976146', 'T:2025-03-07 12:13:19.631 C:GET_IMAGE P:1', 'T:2025-03-07 12:18:31.389 C:SET_ATTITUDE P:17.855231', 'T:2025-03-07 12:18:54.631 C:GET_IMAGE P:2', 'T:2025-03-08 11:57:33.206 C:SET_ATTITUDE P:-4.607069', 'T:2025-03-08 11:58:23.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:03:16.762 C:SET_ATTITUDE P:-22.791500', 'T:2025-03-08 12:03:58.131 C:GET_IMAGE P:2']
+2025-03-20 15:16:45 - Satellite_10 - INFO - Called task_update on Satellite 9
+2025-03-20 15:16:45 - Satellite_4 - INFO - Satellite 4 updating tasks: []
+2025-03-20 15:16:45 - Satellite_2 - INFO - Called task_update on Satellite 4
+2025-03-20 15:16:45 - Satellite_9 - INFO - Satellite 9: Left Neighbor = None, Right Neighbor = 10
+2025-03-20 15:16:45 - Satellite_4 - INFO - Satellite 4: Left Neighbor = 2, Right Neighbor = 5
+2025-03-20 15:16:45 - Satellite_10 - INFO - Satellite 10 updating tasks: ['T:2025-03-07 12:21:52.056 C:SET_ATTITUDE P:27.287345', 'T:2025-03-07 12:22:51.631 C:GET_IMAGE P:2', 'T:2025-03-08 12:01:31.051 C:SET_ATTITUDE P:4.497409', 'T:2025-03-08 12:02:21.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:07:17.429 C:SET_ATTITUDE P:-12.603305', 'T:2025-03-08 12:07:56.631 C:GET_IMAGE P:2']
+2025-03-20 15:16:45 - Satellite_10 - INFO - Satellite 10: Left Neighbor = 9, Right Neighbor = 11
+2025-03-20 15:16:45 - Satellite_2 - INFO - Satellite 2 updating tasks: ['T:2025-03-08 14:05:31.646 C:SET_ATTITUDE P:7.992345', 'T:2025-03-08 14:05:52.631 C:GET_IMAGE P:4']
+2025-03-20 15:16:45 - Satellite_10 - INFO - Called task_update on Satellite 9
+2025-03-20 15:16:45 - Satellite_4 - INFO - Called task_update on Satellite 5
+2025-03-20 15:16:45 - Satellite_2 - INFO - Satellite 2: Left Neighbor = 1, Right Neighbor = 4
+2025-03-20 15:16:45 - Satellite_9 - INFO - Satellite 9 updating tasks: ['T:2025-03-07 12:12:20.678 C:SET_ATTITUDE P:26.976146', 'T:2025-03-07 12:13:19.631 C:GET_IMAGE P:1', 'T:2025-03-07 12:18:31.389 C:SET_ATTITUDE P:17.855231', 'T:2025-03-07 12:18:54.631 C:GET_IMAGE P:2', 'T:2025-03-08 11:57:33.206 C:SET_ATTITUDE P:-4.607069', 'T:2025-03-08 11:58:23.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:03:16.762 C:SET_ATTITUDE P:-22.791500', 'T:2025-03-08 12:03:58.131 C:GET_IMAGE P:2']
+2025-03-20 15:16:45 - Satellite_9 - INFO - Satellite 9: Left Neighbor = None, Right Neighbor = 10
+2025-03-20 15:16:45 - Satellite_2 - INFO - Called task_update on Satellite 4
+2025-03-20 15:16:45 - Satellite_5 - INFO - Satellite 5 updating tasks: ['T:2025-03-07 12:45:03.356 C:SET_ATTITUDE P:-23.387573', 'T:2025-03-07 12:45:55.131 C:GET_IMAGE P:3']
+2025-03-20 15:16:45 - Satellite_4 - INFO - Satellite 4 updating tasks: []
+2025-03-20 15:16:45 - Satellite_5 - INFO - Satellite 5: Left Neighbor = 4, Right Neighbor = 6
+2025-03-20 15:16:45 - Satellite_4 - INFO - Satellite 4: Left Neighbor = 2, Right Neighbor = 5
+2025-03-20 15:16:45 - Satellite_5 - INFO - Called task_update on Satellite 6
+2025-03-20 15:16:45 - Satellite_6 - INFO - Satellite 6 updating tasks: ['T:2025-03-07 12:48:59.334 C:SET_ATTITUDE P:-15.648315', 'T:2025-03-07 12:49:35.631 C:GET_IMAGE P:3']
+2025-03-20 15:16:45 - Satellite_4 - INFO - Called task_update on Satellite 5
+2025-03-20 15:16:45 - Satellite_6 - INFO - Satellite 6: Left Neighbor = 5, Right Neighbor = 7
+2025-03-20 15:16:45 - Satellite_5 - INFO - Satellite 5 updating tasks: ['T:2025-03-07 12:45:03.356 C:SET_ATTITUDE P:-23.387573', 'T:2025-03-07 12:45:55.131 C:GET_IMAGE P:3']
+2025-03-20 15:16:45 - Satellite_7 - INFO - Satellite 7 updating tasks: ['T:2025-03-07 12:53:02.131 C:SET_ATTITUDE P:-7.000011', 'T:2025-03-07 12:53:21.131 C:GET_IMAGE P:3']
+2025-03-20 15:16:45 - Satellite_6 - INFO - Called task_update on Satellite 7
+2025-03-20 15:16:45 - Satellite_5 - INFO - Satellite 5: Left Neighbor = 4, Right Neighbor = 6
+2025-03-20 15:16:45 - Satellite_7 - INFO - Satellite 7: Left Neighbor = 6, Right Neighbor = 8
+2025-03-20 15:16:45 - Satellite_6 - INFO - Satellite 6 updating tasks: ['T:2025-03-07 12:48:59.334 C:SET_ATTITUDE P:-15.648315', 'T:2025-03-07 12:49:35.631 C:GET_IMAGE P:3']
+2025-03-20 15:16:45 - Satellite_6 - INFO - Satellite 6: Left Neighbor = 5, Right Neighbor = 7
+2025-03-20 15:16:45 - Satellite_5 - INFO - Called task_update on Satellite 6
+2025-03-20 15:16:45 - Satellite_7 - INFO - Called task_update on Satellite 8
+2025-03-20 15:16:45 - Satellite_8 - INFO - Satellite 8 updating tasks: ['T:2025-03-07 12:57:04.449 C:SET_ATTITUDE P:2.340807', 'T:2025-03-07 12:57:14.131 C:GET_IMAGE P:3']
+2025-03-20 15:16:45 - Satellite_8 - INFO - Satellite 8: Left Neighbor = 7, Right Neighbor = None
+2025-03-20 15:16:45 - Satellite_6 - INFO - Called task_update on Satellite 7
+2025-03-20 15:16:45 - Satellite_7 - INFO - Satellite 7 updating tasks: ['T:2025-03-07 12:53:02.131 C:SET_ATTITUDE P:-7.000011', 'T:2025-03-07 12:53:21.131 C:GET_IMAGE P:3']
+2025-03-20 15:16:45 - Satellite_7 - INFO - Satellite 7: Left Neighbor = 6, Right Neighbor = 8
+2025-03-20 15:16:45 - Satellite_8 - INFO - Satellite 8 updating tasks: ['T:2025-03-07 12:57:04.449 C:SET_ATTITUDE P:2.340807', 'T:2025-03-07 12:57:14.131 C:GET_IMAGE P:3']
+2025-03-20 15:16:45 - Satellite_7 - INFO - Called task_update on Satellite 8
+2025-03-20 15:16:45 - Satellite_8 - INFO - Satellite 8: Left Neighbor = 7, Right Neighbor = None
+2025-03-20 15:17:05 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 15:17:07 - httpx - INFO - HTTP Request: POST https://api.agno.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-20 15:17:15 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-20 15:17:16 - httpx - INFO - HTTP Request: POST https://api.agno.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-20 15:17:16 - TaskPlanningAgent - INFO - Agent response: RunResponse(content=' - Running: transfer_task_to_satellite_plan_agent(expected_output=明确描述如何通过现有卫星资源在指定时间范围内覆盖目标区域以监测交通状况，并列出所需调整或新增的任务条目（例如，卫星的姿态控制、轨道调整等）, task_description=创建杭州西湖交通情况监测的星座调度任务。)\n\n为了更好地理解卫星当前状态及计划，我们已获取了所有相关数据。基于这些信息和杭州西湖的交通监控需求，以下是我们对卫星调度提出的具体建议：\n\n### 调度建议概述\n\n1. **频率优化**：在早晚高峰时段增加监测频率。\n2. **覆盖全面性保证**：确保每天都有足够的卫星任务来覆盖整个目标区域。\n3. **冗余策略实施**：为意外故障准备备用方案，保障连续服务。\n\n这些措施旨在提高杭州西湖交通情况监测的有效性和可靠性。接下来我们将细化每项建议的具体执行计划，并考虑可能出现的挑战和解决方案。\n\n### 下一步行动\n\n- 分析当前任务负载与时间表。\n- 根据需求调整卫星姿态和图像获取频率以适应不同时间段内的监控要求。\n- 制定应急预案，确保服务连续性不受单点故障影响。\n\n请确认这些建议是否满足您的需求以及下一步如何进行详细计划制定。', content_type='str', thinking=None, event='RunResponse', messages=[Message(role='system', content='<your_role>\n负责协调任务生成-规划-执行团队的工作分配。\n</your_role>\n\n<agent_team>\nYou are the leader of a team of AI Agents:\n- You can either respond directly or transfer tasks to other Agents in your team depending on the tools available to them.\n- If you transfer a task to another Agent, make sure to include:\n  - task_description (str): A clear description of the task.\n  - expected_output (str): The expected output.\n  - additional_information (str): Additional information that will help the Agent complete the task.\n- You must always validate the output of the other Agents before responding to the user.\n- You can re-assign the task if you are not satisfied with the result.\n</agent_team>\n\n<instructions>\n你是星座调度团队的管理员，负责根据任务清单执行星座规划调度，不可伪造数据。\n调度任务时请遵循以下步骤：\n1. 读取用户指令，将指令分配给任务生成 Agent\n3. 将任务生成Agent的结果分配给任务规划 Agent，输出任务规划结果\n4. 将任务规划Agent的结果分配给任务执行 Agent，输出任务执行结果\n6. 完成上述步骤后，分析任务执行结果，给出最终结论\n\n你的风格指南：\n- 使用Json格式进行结构化数据展示\n- 为每个数据部分添加清晰的标题\n- 对技术术语进行简要解释\n- 以数据驱动的卫星任务规划方案结束\\   \n\n\n\n</instructions>\n\n<additional_information>\n- Use markdown to format your answers.\n- The current time is 2025-03-20 15:16:09.066402\n</additional_information>\n\n<transfer_instructions>\nYou can transfer tasks to the following Agents in your team:\n\nAgent 1:\nName: Satellite plan Agent\nRole: 负责根据卫星状态和任务请求进行星座调度规划。\nAvailable tools: run_tool\n</transfer_instructions>', name=None, tool_call_id=None, tool_calls=None, audio=None, images=None, videos=None, files=None, audio_output=None, thinking=None, redacted_thinking=None, provider_data=None, citations=None, reasoning_content=None, tool_name=None, tool_args=None, tool_call_error=None, stop_after_tool_call=False, add_to_agent_memory=True, from_history=False, metrics=MessageMetrics(input_tokens=0, output_tokens=0, total_tokens=0, prompt_tokens=0, completion_tokens=0, prompt_tokens_details=None, completion_tokens_details=None, additional_metrics=None, time=None, time_to_first_token=None, timer=None), references=None, created_at=1742454969), Message(role='user', content='监测杭州西湖交通情况，给出卫星调度建议', name=None, tool_call_id=None, tool_calls=None, audio=None, images=None, videos=None, files=None, audio_output=None, thinking=None, redacted_thinking=None, provider_data=None, citations=None, reasoning_content=None, tool_name=None, tool_args=None, tool_call_error=None, stop_after_tool_call=False, add_to_agent_memory=True, from_history=False, metrics=MessageMetrics(input_tokens=0, output_tokens=0, total_tokens=0, prompt_tokens=0, completion_tokens=0, prompt_tokens_details=None, completion_tokens_details=None, additional_metrics=None, time=None, time_to_first_token=None, timer=None), references=None, created_at=1742454969), Message(role='assistant', content='', name=None, tool_call_id=None, tool_calls=[{'type': 'function', 'function': {'name': 'transfer_task_to_satellite_plan_agent', 'arguments': '{"expected_output": "\\u660e\\u786e\\u63cf\\u8ff0\\u5982\\u4f55\\u901a\\u8fc7\\u73b0\\u6709\\u536b\\u661f\\u8d44\\u6e90\\u5728\\u6307\\u5b9a\\u65f6\\u95f4\\u8303\\u56f4\\u5185\\u8986\\u76d6\\u76ee\\u6807\\u533a\\u57df\\u4ee5\\u76d1\\u6d4b\\u4ea4\\u901a\\u72b6\\u51b5\\uff0c\\u5e76\\u5217\\u51fa\\u6240\\u9700\\u8c03\\u6574\\u6216\\u65b0\\u589e\\u7684\\u4efb\\u52a1\\u6761\\u76ee\\uff08\\u4f8b\\u5982\\uff0c\\u536b\\u661f\\u7684\\u59ff\\u6001\\u63a7\\u5236\\u3001\\u8f68\\u9053\\u8c03\\u6574\\u7b49\\uff09", "task_description": "\\u521b\\u5efa\\u676d\\u5dde\\u897f\\u6e56\\u4ea4\\u901a\\u60c5\\u51b5\\u76d1\\u6d4b\\u7684\\u661f\\u5ea7\\u8c03\\u5ea6\\u4efb\\u52a1\\u3002"}'}}], audio=None, images=None, videos=None, files=None, audio_output=None, thinking=None, redacted_thinking=None, provider_data=None, citations=None, reasoning_content=None, tool_name=None, tool_args=None, tool_call_error=None, stop_after_tool_call=False, add_to_agent_memory=True, from_history=False, metrics=MessageMetrics(input_tokens=684, output_tokens=208, total_tokens=892, prompt_tokens=0, completion_tokens=0, prompt_tokens_details=None, completion_tokens_details=None, additional_metrics={'total_duration': 12963713819, 'load_duration': 3928753182, 'prompt_eval_duration': 697000000, 'eval_duration': 7703000000}, time=12.979270757059567, time_to_first_token=None, timer=<agno.utils.timer.Timer object at 0x7ff097d6f9d0>), references=None, created_at=1742454969), Message(role='tool', content=' - Running: run_tool(query=获取所有卫星的状态和计划)\n\n# 杭州西湖交通情况监测星座调度任务\n\n基于任务要求，我们将分析现有的卫星资源，并对杭州西湖区域进行覆盖规划。具体来说，我们计划通过调整或新增任务来优化当前的卫星部署以满足交通监控需求。\n\n### 卫星详细数据与描述\n\n#### 卫星编号 1\n- **时间** : T:2025-03-08 12:22:49.899\n- **姿态角调整** : SET_ATTITUDE P:29.615673\n- **获取图像** : GET_IMAGE P:2\n\n#### 卫星编号 2\n- **时间** : T:2025-03-08 14:05:31.646\n- **姿态角调整** : SET_ATTITUDE P:7.992345\n- **获取图像** : GET_IMAGE P:4\n\n#### 卫星编号 9\n... (省略其他卫星以简明)\n...\n#### 卫星编号 12\n- **时间** : T:2025-03-08 12:15:32.641\n- **姿态角调整** : SET_ATTITUDE P:10.254166\n- **获取图像** : GET_IMAGE P:2\n\n### 调整或新增任务建议\n\n为了更有效地覆盖杭州西湖区域，以下是一些建议：\n\n1. 增加卫星在交通高峰期（如早晚高峰）的监控频率。\n   - 这可以通过调整姿态角使卫星能够更快地指向目标地区，并增加图像获取次数来实现。\n\n2. 确保所有涉及监测区域内的卫星任务按时执行且覆盖全面。\n   - 如果某些时间段内没有安排相关任务，则需要重新规划以确保无缝监控。\n\n3. 实施冗余计划，以防某颗卫星出现故障时仍能维持基本的服务水平。\n   \n### 结论\n\n通过调整和优化现有资源，可以有效地实现杭州西湖交通情况的实时监测。下一步是根据具体需求细化每个时间段的任务安排，并制定相应的应急预案来保障服务连续性。\n\n以上即为关于此次任务的具体分析与建议，请进一步确认是否需要针对某个特定方面进行更深入探讨或采取行动。\n', name=None, tool_call_id=None, tool_calls=None, audio=None, images=None, videos=None, files=None, audio_output=None, thinking=None, redacted_thinking=None, provider_data=None, citations=None, reasoning_content=None, tool_name='transfer_task_to_satellite_plan_agent', tool_args={'expected_output': '明确描述如何通过现有卫星资源在指定时间范围内覆盖目标区域以监测交通状况，并列出所需调整或新增的任务条目（例如，卫星的姿态控制、轨道调整等）', 'task_description': '创建杭州西湖交通情况监测的星座调度任务。'}, tool_call_error=False, stop_after_tool_call=False, add_to_agent_memory=True, from_history=False, metrics=MessageMetrics(input_tokens=0, output_tokens=0, total_tokens=0, prompt_tokens=0, completion_tokens=0, prompt_tokens_details=None, completion_tokens_details=None, additional_metrics=None, time=0.00033865601290017366, time_to_first_token=None, timer=None), references=None, created_at=1742455027), Message(role='assistant', content='为了更好地理解卫星当前状态及计划，我们已获取了所有相关数据。基于这些信息和杭州西湖的交通监控需求，以下是我们对卫星调度提出的具体建议：\n\n### 调度建议概述\n\n1. **频率优化**：在早晚高峰时段增加监测频率。\n2. **覆盖全面性保证**：确保每天都有足够的卫星任务来覆盖整个目标区域。\n3. **冗余策略实施**：为意外故障准备备用方案，保障连续服务。\n\n这些措施旨在提高杭州西湖交通情况监测的有效性和可靠性。接下来我们将细化每项建议的具体执行计划，并考虑可能出现的挑战和解决方案。\n\n### 下一步行动\n\n- 分析当前任务负载与时间表。\n- 根据需求调整卫星姿态和图像获取频率以适应不同时间段内的监控要求。\n- 制定应急预案，确保服务连续性不受单点故障影响。\n\n请确认这些建议是否满足您的需求以及下一步如何进行详细计划制定。', name=None, tool_call_id=None, tool_calls=None, audio=None, images=None, videos=None, files=None, audio_output=None, thinking=None, redacted_thinking=None, provider_data=None, citations=None, reasoning_content=None, tool_name=None, tool_args=None, tool_call_error=None, stop_after_tool_call=False, add_to_agent_memory=True, from_history=False, metrics=MessageMetrics(input_tokens=1212, output_tokens=199, total_tokens=1411, prompt_tokens=0, completion_tokens=0, prompt_tokens_details=None, completion_tokens_details=None, additional_metrics={'total_duration': 8255870135, 'load_duration': 27092614, 'prompt_eval_duration': 816000000, 'eval_duration': 7344000000}, time=8.269255712046288, time_to_first_token=None, timer=<agno.utils.timer.Timer object at 0x7ff035694d00>), references=None, created_at=1742455027)], metrics={'input_tokens': [684, 1212], 'output_tokens': [208, 199], 'total_tokens': [892, 1411], 'prompt_tokens': [0, 0], 'completion_tokens': [0, 0], 'additional_metrics': [{'total_duration': 12963713819, 'load_duration': 3928753182, 'prompt_eval_duration': 697000000, 'eval_duration': 7703000000}, {'total_duration': 8255870135, 'load_duration': 27092614, 'prompt_eval_duration': 816000000, 'eval_duration': 7344000000}], 'time': [12.979270757059567, 8.269255712046288]}, model='qwen2.5:14b', run_id='71e077ef-0acc-42c0-a422-12a4dec70b19', agent_id='64bf7e6a-9289-4706-9ee3-9b5151bee979', session_id='7f318b46-005f-4ca0-a3ae-4ea87cf449ce', workflow_id=None, tools=[{'content': ' - Running: run_tool(query=获取所有卫星的状态和计划)\n\n# 杭州西湖交通情况监测星座调度任务\n\n基于任务要求，我们将分析现有的卫星资源，并对杭州西湖区域进行覆盖规划。具体来说，我们计划通过调整或新增任务来优化当前的卫星部署以满足交通监控需求。\n\n### 卫星详细数据与描述\n\n#### 卫星编号 1\n- **时间** : T:2025-03-08 12:22:49.899\n- **姿态角调整** : SET_ATTITUDE P:29.615673\n- **获取图像** : GET_IMAGE P:2\n\n#### 卫星编号 2\n- **时间** : T:2025-03-08 14:05:31.646\n- **姿态角调整** : SET_ATTITUDE P:7.992345\n- **获取图像** : GET_IMAGE P:4\n\n#### 卫星编号 9\n... (省略其他卫星以简明)\n...\n#### 卫星编号 12\n- **时间** : T:2025-03-08 12:15:32.641\n- **姿态角调整** : SET_ATTITUDE P:10.254166\n- **获取图像** : GET_IMAGE P:2\n\n### 调整或新增任务建议\n\n为了更有效地覆盖杭州西湖区域，以下是一些建议：\n\n1. 增加卫星在交通高峰期（如早晚高峰）的监控频率。\n   - 这可以通过调整姿态角使卫星能够更快地指向目标地区，并增加图像获取次数来实现。\n\n2. 确保所有涉及监测区域内的卫星任务按时执行且覆盖全面。\n   - 如果某些时间段内没有安排相关任务，则需要重新规划以确保无缝监控。\n\n3. 实施冗余计划，以防某颗卫星出现故障时仍能维持基本的服务水平。\n   \n### 结论\n\n通过调整和优化现有资源，可以有效地实现杭州西湖交通情况的实时监测。下一步是根据具体需求细化每个时间段的任务安排，并制定相应的应急预案来保障服务连续性。\n\n以上即为关于此次任务的具体分析与建议，请进一步确认是否需要针对某个特定方面进行更深入探讨或采取行动。\n', 'tool_call_id': None, 'tool_name': 'transfer_task_to_satellite_plan_agent', 'tool_args': {'expected_output': '明确描述如何通过现有卫星资源在指定时间范围内覆盖目标区域以监测交通状况，并列出所需调整或新增的任务条目（例如，卫星的姿态控制、轨道调整等）', 'task_description': '创建杭州西湖交通情况监测的星座调度任务。'}, 'tool_call_error': False, 'metrics': MessageMetrics(input_tokens=0, output_tokens=0, total_tokens=0, prompt_tokens=0, completion_tokens=0, prompt_tokens_details=None, completion_tokens_details=None, additional_metrics=None, time=0.00033865601290017366, time_to_first_token=None, timer=None), 'created_at': 1742455027}], images=None, videos=None, audio=None, response_audio=None, citations=None, extra_data=None, created_at=1742454964)
+2025-03-21 09:51:35 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-03-21 09:51:35 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-03-21 09:51:35 - faiss.loader - INFO - Loading faiss.
+2025-03-21 09:51:35 - faiss.loader - INFO - Successfully loaded faiss.
+2025-03-21 09:51:42 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-21 09:51:50 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-21 09:51:52 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-21 09:51:52 - TaskPlanningAgent - ERROR - Error occurred: 2 validation errors for Message
+content.list[any]
+  Input should be a valid list [type=list_type, input_value=Task({
+  "0": {
+    "loca...   "area_size": 0
+  }
+}), input_type=Task]
+    For further information visit https://errors.pydantic.dev/2.9/v/list_type
+content.str
+  Input should be a valid string [type=string_type, input_value=Task({
+  "0": {
+    "loca...   "area_size": 0
+  }
+}), input_type=Task]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+2025-03-21 09:52:06 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-03-21 09:52:06 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-03-21 09:52:06 - faiss.loader - INFO - Loading faiss.
+2025-03-21 09:52:06 - faiss.loader - INFO - Successfully loaded faiss.
+2025-03-21 09:52:10 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-21 09:52:13 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-21 09:52:18 - Agent_1 - INFO - Satellite 1 agent listening on port 5001
+2025-03-21 09:52:18 - Agent_2 - INFO - Satellite 2 agent listening on port 5002
+2025-03-21 09:52:18 - Agent_3 - INFO - Satellite 3 agent listening on port 5003
+2025-03-21 09:52:18 - Agent_4 - INFO - Satellite 4 agent listening on port 5004
+2025-03-21 09:52:18 - Agent_5 - INFO - Satellite 5 agent listening on port 5005
+2025-03-21 09:52:18 - Agent_6 - INFO - Satellite 6 agent listening on port 5006
+2025-03-21 09:52:18 - Agent_7 - INFO - Satellite 7 agent listening on port 5007
+2025-03-21 09:52:18 - Agent_8 - INFO - Satellite 8 agent listening on port 5008
+2025-03-21 09:52:18 - Agent_9 - INFO - Satellite 9 agent listening on port 5009
+2025-03-21 09:52:18 - Agent_10 - INFO - Satellite 10 agent listening on port 5010
+2025-03-21 09:52:18 - Agent_11 - INFO - Satellite 11 agent listening on port 5011
+2025-03-21 09:52:18 - Agent_12 - INFO - Satellite 12 agent listening on port 5012
+2025-03-21 09:52:36 - Satellite_3 - INFO - Satellite 3 updating tasks: ['T:2025-03-08 12:19:14.112 C:SET_ATTITUDE P:20.759332', 'T:2025-03-08 12:20:00.631 C:GET_IMAGE P:2']
+2025-03-21 09:52:36 - Satellite_3 - INFO - Satellite 3: Left Neighbor = 12, Right Neighbor = 1
+2025-03-21 09:52:36 - Satellite_3 - INFO - Called task_update on Satellite 12
+2025-03-21 09:52:36 - Satellite_12 - INFO - Satellite 12 updating tasks: ['T:2025-03-08 12:09:38.132 C:SET_ATTITUDE P:21.749146', 'T:2025-03-08 12:10:26.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:15:32.641 C:SET_ATTITUDE P:10.254166', 'T:2025-03-08 12:16:00.631 C:GET_IMAGE P:2']
+2025-03-21 09:52:36 - Satellite_12 - INFO - Satellite 12: Left Neighbor = 11, Right Neighbor = 3
+2025-03-21 09:52:36 - Satellite_3 - INFO - Called task_update on Satellite 1
+2025-03-21 09:52:36 - Satellite_1 - INFO - Satellite 1 updating tasks: ['T:2025-03-08 12:22:49.899 C:SET_ATTITUDE P:29.615673', 'T:2025-03-08 12:23:54.131 C:GET_IMAGE P:2']
+2025-03-21 09:52:36 - Satellite_1 - INFO - Satellite 1: Left Neighbor = 3, Right Neighbor = 2
+2025-03-21 09:52:36 - Satellite_3 - INFO - Satellite 3 updating tasks: ['T:2025-03-08 12:19:14.112 C:SET_ATTITUDE P:20.759332', 'T:2025-03-08 12:20:00.631 C:GET_IMAGE P:2']
+2025-03-21 09:52:36 - Satellite_12 - INFO - Called task_update on Satellite 11
+2025-03-21 09:52:36 - Satellite_11 - INFO - Satellite 11 updating tasks: ['T:2025-03-08 12:05:52.173 C:SET_ATTITUDE P:13.478829', 'T:2025-03-08 12:06:24.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:11:24.182 C:SET_ATTITUDE P:-1.245339', 'T:2025-03-08 12:11:58.631 C:GET_IMAGE P:2']
+2025-03-21 09:52:36 - Satellite_3 - INFO - Satellite 3: Left Neighbor = 12, Right Neighbor = 1
+2025-03-21 09:52:36 - Satellite_1 - INFO - Called task_update on Satellite 2
+2025-03-21 09:52:36 - Satellite_12 - INFO - Satellite 12 updating tasks: ['T:2025-03-08 12:09:38.132 C:SET_ATTITUDE P:21.749146', 'T:2025-03-08 12:10:26.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:15:32.641 C:SET_ATTITUDE P:10.254166', 'T:2025-03-08 12:16:00.631 C:GET_IMAGE P:2']
+2025-03-21 09:52:36 - Satellite_12 - INFO - Satellite 12: Left Neighbor = 11, Right Neighbor = 3
+2025-03-21 09:52:36 - Satellite_2 - INFO - Satellite 2 updating tasks: ['T:2025-03-08 14:05:31.646 C:SET_ATTITUDE P:7.992345', 'T:2025-03-08 14:05:52.631 C:GET_IMAGE P:4']
+2025-03-21 09:52:36 - Satellite_3 - INFO - Called task_update on Satellite 12
+2025-03-21 09:52:36 - Satellite_2 - INFO - Satellite 2: Left Neighbor = 1, Right Neighbor = 4
+2025-03-21 09:52:36 - Satellite_12 - INFO - Called task_update on Satellite 11
+2025-03-21 09:52:36 - Satellite_11 - INFO - Satellite 11: Left Neighbor = 10, Right Neighbor = 12
+2025-03-21 09:52:36 - Satellite_3 - INFO - Called task_update on Satellite 1
+2025-03-21 09:52:36 - Satellite_1 - INFO - Satellite 1 updating tasks: ['T:2025-03-08 12:22:49.899 C:SET_ATTITUDE P:29.615673', 'T:2025-03-08 12:23:54.131 C:GET_IMAGE P:2']
+2025-03-21 09:52:36 - Satellite_4 - INFO - Satellite 4 updating tasks: []
+2025-03-21 09:52:36 - Satellite_2 - INFO - Called task_update on Satellite 4
+2025-03-21 09:52:36 - Satellite_1 - INFO - Satellite 1: Left Neighbor = 3, Right Neighbor = 2
+2025-03-21 09:52:36 - Satellite_4 - INFO - Satellite 4: Left Neighbor = 2, Right Neighbor = 5
+2025-03-21 09:52:36 - Satellite_11 - INFO - Called task_update on Satellite 10
+2025-03-21 09:52:36 - Satellite_10 - INFO - Satellite 10 updating tasks: ['T:2025-03-07 12:21:52.056 C:SET_ATTITUDE P:27.287345', 'T:2025-03-07 12:22:51.631 C:GET_IMAGE P:2', 'T:2025-03-08 12:01:31.051 C:SET_ATTITUDE P:4.497409', 'T:2025-03-08 12:02:21.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:07:17.429 C:SET_ATTITUDE P:-12.603305', 'T:2025-03-08 12:07:56.631 C:GET_IMAGE P:2']
+2025-03-21 09:52:36 - Satellite_2 - INFO - Satellite 2 updating tasks: ['T:2025-03-08 14:05:31.646 C:SET_ATTITUDE P:7.992345', 'T:2025-03-08 14:05:52.631 C:GET_IMAGE P:4']
+2025-03-21 09:52:36 - Satellite_1 - INFO - Called task_update on Satellite 2
+2025-03-21 09:52:36 - Satellite_4 - INFO - Called task_update on Satellite 5
+2025-03-21 09:52:36 - Satellite_10 - INFO - Satellite 10: Left Neighbor = 9, Right Neighbor = 11
+2025-03-21 09:52:36 - Satellite_5 - INFO - Satellite 5 updating tasks: ['T:2025-03-07 12:45:03.356 C:SET_ATTITUDE P:-23.387573', 'T:2025-03-07 12:45:55.131 C:GET_IMAGE P:3']
+2025-03-21 09:52:36 - Satellite_2 - INFO - Satellite 2: Left Neighbor = 1, Right Neighbor = 4
+2025-03-21 09:52:36 - Satellite_11 - INFO - Satellite 11 updating tasks: ['T:2025-03-08 12:05:52.173 C:SET_ATTITUDE P:13.478829', 'T:2025-03-08 12:06:24.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:11:24.182 C:SET_ATTITUDE P:-1.245339', 'T:2025-03-08 12:11:58.631 C:GET_IMAGE P:2']
+2025-03-21 09:52:36 - Satellite_5 - INFO - Satellite 5: Left Neighbor = 4, Right Neighbor = 6
+2025-03-21 09:52:36 - Satellite_9 - INFO - Satellite 9 updating tasks: ['T:2025-03-07 12:12:20.678 C:SET_ATTITUDE P:26.976146', 'T:2025-03-07 12:13:19.631 C:GET_IMAGE P:1', 'T:2025-03-07 12:18:31.389 C:SET_ATTITUDE P:17.855231', 'T:2025-03-07 12:18:54.631 C:GET_IMAGE P:2', 'T:2025-03-08 11:57:33.206 C:SET_ATTITUDE P:-4.607069', 'T:2025-03-08 11:58:23.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:03:16.762 C:SET_ATTITUDE P:-22.791500', 'T:2025-03-08 12:03:58.131 C:GET_IMAGE P:2']
+2025-03-21 09:52:36 - Satellite_10 - INFO - Called task_update on Satellite 9
+2025-03-21 09:52:36 - Satellite_9 - INFO - Satellite 9: Left Neighbor = None, Right Neighbor = 10
+2025-03-21 09:52:36 - Satellite_11 - INFO - Satellite 11: Left Neighbor = 10, Right Neighbor = 12
+2025-03-21 09:52:36 - Satellite_4 - INFO - Satellite 4 updating tasks: []
+2025-03-21 09:52:36 - Satellite_2 - INFO - Called task_update on Satellite 4
+2025-03-21 09:52:36 - Satellite_5 - INFO - Called task_update on Satellite 6
+2025-03-21 09:52:36 - Satellite_4 - INFO - Satellite 4: Left Neighbor = 2, Right Neighbor = 5
+2025-03-21 09:52:36 - Satellite_10 - INFO - Satellite 10 updating tasks: ['T:2025-03-07 12:21:52.056 C:SET_ATTITUDE P:27.287345', 'T:2025-03-07 12:22:51.631 C:GET_IMAGE P:2', 'T:2025-03-08 12:01:31.051 C:SET_ATTITUDE P:4.497409', 'T:2025-03-08 12:02:21.631 C:GET_IMAGE P:1', 'T:2025-03-08 12:07:17.429 C:SET_ATTITUDE P:-12.603305', 'T:2025-03-08 12:07:56.631 C:GET_IMAGE P:2']
+2025-03-21 09:52:36 - Satellite_6 - INFO - Satellite 6 updating tasks: ['T:2025-03-07 12:48:59.334 C:SET_ATTITUDE P:-15.648315', 'T:2025-03-07 12:49:35.631 C:GET_IMAGE P:3']
+2025-03-21 09:52:36 - Satellite_11 - INFO - Called task_update on Satellite 10
+2025-03-21 09:52:36 - Satellite_10 - INFO - Satellite 10: Left Neighbor = 9, Right Neighbor = 11
+2025-03-21 09:52:36 - Satellite_6 - INFO - Satellite 6: Left Neighbor = 5, Right Neighbor = 7
+2025-03-21 09:52:36 - Satellite_4 - INFO - Called task_update on Satellite 5
+2025-03-21 09:52:36 - Satellite_5 - INFO - Satellite 5 updating tasks: ['T:2025-03-07 12:45:03.356 C:SET_ATTITUDE P:-23.387573', 'T:2025-03-07 12:45:55.131 C:GET_IMAGE P:3']
+2025-03-21 09:52:36 - Satellite_10 - INFO - Called task_update on Satellite 9
+2025-03-21 09:52:36 - Satellite_9 - INFO - Satellite 9 updating tasks: ['T:2025-03-07 12:12:20.678 C:SET_ATTITUDE P:26.976146', 'T:2025-03-07 12:13:19.631 C:GET_IMAGE P:1', 'T:2025-03-07 12:18:31.389 C:SET_ATTITUDE P:17.855231', 'T:2025-03-07 12:18:54.631 C:GET_IMAGE P:2', 'T:2025-03-08 11:57:33.206 C:SET_ATTITUDE P:-4.607069', 'T:2025-03-08 11:58:23.131 C:GET_IMAGE P:1', 'T:2025-03-08 12:03:16.762 C:SET_ATTITUDE P:-22.791500', 'T:2025-03-08 12:03:58.131 C:GET_IMAGE P:2']
+2025-03-21 09:52:36 - Satellite_5 - INFO - Satellite 5: Left Neighbor = 4, Right Neighbor = 6
+2025-03-21 09:52:36 - Satellite_7 - INFO - Satellite 7 updating tasks: ['T:2025-03-07 12:53:02.131 C:SET_ATTITUDE P:-7.000011', 'T:2025-03-07 12:53:21.131 C:GET_IMAGE P:3']
+2025-03-21 09:52:36 - Satellite_6 - INFO - Called task_update on Satellite 7
+2025-03-21 09:52:36 - Satellite_9 - INFO - Satellite 9: Left Neighbor = None, Right Neighbor = 10
+2025-03-21 09:52:36 - Satellite_5 - INFO - Called task_update on Satellite 6
+2025-03-21 09:52:36 - Satellite_7 - INFO - Satellite 7: Left Neighbor = 6, Right Neighbor = 8
+2025-03-21 09:52:36 - Satellite_6 - INFO - Satellite 6 updating tasks: ['T:2025-03-07 12:48:59.334 C:SET_ATTITUDE P:-15.648315', 'T:2025-03-07 12:49:35.631 C:GET_IMAGE P:3']
+2025-03-21 09:52:36 - Satellite_6 - INFO - Satellite 6: Left Neighbor = 5, Right Neighbor = 7
+2025-03-21 09:52:36 - Satellite_6 - INFO - Called task_update on Satellite 7
+2025-03-21 09:52:36 - Satellite_7 - INFO - Called task_update on Satellite 8
+2025-03-21 09:52:36 - Satellite_7 - INFO - Satellite 7 updating tasks: ['T:2025-03-07 12:53:02.131 C:SET_ATTITUDE P:-7.000011', 'T:2025-03-07 12:53:21.131 C:GET_IMAGE P:3']
+2025-03-21 09:52:36 - Satellite_7 - INFO - Satellite 7: Left Neighbor = 6, Right Neighbor = 8
+2025-03-21 09:52:36 - Satellite_7 - INFO - Called task_update on Satellite 8
+2025-03-21 09:52:36 - Satellite_8 - INFO - Satellite 8 updating tasks: ['T:2025-03-07 12:57:04.449 C:SET_ATTITUDE P:2.340807', 'T:2025-03-07 12:57:14.131 C:GET_IMAGE P:3']
+2025-03-21 09:52:36 - Satellite_8 - INFO - Satellite 8: Left Neighbor = 7, Right Neighbor = None
+2025-03-21 09:52:36 - Satellite_8 - INFO - Satellite 8 updating tasks: ['T:2025-03-07 12:57:04.449 C:SET_ATTITUDE P:2.340807', 'T:2025-03-07 12:57:14.131 C:GET_IMAGE P:3']
+2025-03-21 09:52:36 - Satellite_8 - INFO - Satellite 8: Left Neighbor = 7, Right Neighbor = None
+2025-03-21 09:52:45 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-21 09:52:46 - httpx - INFO - HTTP Request: POST https://api.agno.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-21 09:52:52 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-21 09:53:13 - Satellite_9 - INFO - Satellite 9 executing task: C:SET_ATTITUDE P:26.976146
+2025-03-21 09:53:13 - Satellite_9 - INFO - Satellite 9 set target attitude with roll angle 26.976146°
+2025-03-21 09:53:13 - Satellite_9 - INFO - Satellite 9 executing task: C:GET_IMAGE P:1
+2025-03-21 09:53:13 - Satellite_9 - INFO - Satellite 9 agent get image
+2025-03-21 09:53:13 - Satellite_9 - ERROR - Error executing task: [Errno 111] Connection refused
+2025-03-21 09:53:53 - TaskPlanningAgent - INFO - Agent response: None
