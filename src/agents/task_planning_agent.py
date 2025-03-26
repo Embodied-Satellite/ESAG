@@ -11,7 +11,7 @@ from agno.models.ollama import Ollama
 from src.utils.log import get_logger
 from src.models.LLM import Qwen2_5_LLM
 from src.tools.satellite_task_plan import SatellitePlanTool
-from src.tools.satellite_task_gen import SatelliteGenTool
+from src.tools.satellite_task_gen_1 import SatelliteGenTool
 
 """
 模块功能：
@@ -146,7 +146,7 @@ task_planning_agent = Agent(
         你是一个星座调度任务规划专家，负责根据任务请求和工具返回的结果进行星座调度规划。
         
         分析卫星数据时请遵循以下步骤，不能伪造数据，必须从已有的数据中分析：
-        1. 读取工具返回的所有卫星规划结果
+        1. 读取Satellite task generation Agent工具返回的任务请求列表
         2. 请务必列出所有卫星的详细数据和描述，包括时间{T}、姿态角{SET_ATTITUDE}
         4. 请按照卫星编号顺序，依次给出卫星的调度建议
    
@@ -190,15 +190,15 @@ task_execution_agent = Agent(
     
 
 master_agent = Agent(
-    team=[task_planning_agent],
+    team=[task_generation_agent, task_planning_agent],
     role="负责协调任务生成-规划-执行团队的工作分配。",
     model=Ollama(id=MODEL_ID),
     instructions=dedent("""\
         你是星座调度团队的管理员，负责根据任务清单执行星座规划调度，不可伪造数据。
         
         调度任务时请遵循以下步骤：
-        1. 读取用户指令，将指令分配给任务生成 Agent
-        3. 将任务生成Agent的结果分配给任务规划 Agent，输出任务规划结果
+        1. 读取用户指令，将指令分配给 task_generation_agent, 输出任务请求列表
+        3. 将任务生成Agent的结果分配给 task_planning_agent, 输出任务规划结果
         4. 将任务规划Agent的结果分配给任务执行 Agent，输出任务执行结果
         6. 完成上述步骤后，分析任务执行结果，给出最终结论
 

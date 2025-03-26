@@ -166,16 +166,25 @@ class SatelliteGenTool(Toolkit):
             
             
         Returns:
-            str: A JSON formatted string containing the search results.
-        
+            dict: A dictionary containing the task information.
         """
         if isinstance(query, dict):
             query = json.dumps(query)
+        elif not query.strip().startswith("{"):
+            # 如果 query 是逗号分隔的字符串，尝试解析
+            try:
+                keys = ["location", "task_type", "is_area", "task_priority", "time_priority", "quality_priority", "validity_period_days", "area_size"]
+                values = query.split(",")
+                query = json.dumps(dict(zip(keys, values)))
+            except Exception as e:
+                logger.error(f"无法解析 query: {query}, 错误: {e}")
+                raise ValueError("Invalid query format")
+
             
         task_params = json.loads(query)
         
         print(f'task_params: {task_params}')
-        # task_params['is_area'] = task_params["task_type"] == "area_target"
+
 
         task_id = 0
         coordinates = self._get_geocode(task_params["location"])
