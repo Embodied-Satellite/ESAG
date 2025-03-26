@@ -18,10 +18,6 @@ def main():
         logger.info(f"开始处理用户输入: {user_input}")
         response = master_agent.print_response(user_input, stream=True)
         
-        # 打印结果
-        print("任务调度结果:")
-        print(response)
-        
         # 记录日志
         logger.info("任务调度完成，结果: %s", response)
     except Exception as e:
