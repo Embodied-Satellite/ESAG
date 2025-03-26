@@ -1,9 +1,6 @@
 import sys
 import logging
 from textwrap import dedent
-
-sys.path.append('/home/mars/cyh_ws/ESAG/') 
-
 from agno.agent import Agent
 from agno.models.openai import OpenAIChat
 from agno.models.ollama import Ollama

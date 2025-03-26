@@ -1,6 +1,4 @@
 import sys
-sys.path.append('/home/mars/cyh_ws/ESAG/') 
-
 from textwrap import dedent
 
 from agno.agent import Agent
