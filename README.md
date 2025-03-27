@@ -87,17 +87,30 @@ ESAG/
 │   ├── utils/
 │   │   ├── log.py                 # 日志工具
 ├── logs/                          # 日志文件夹
+├── unittests/                     # 测试文件夹
 ├── app.py                         # app应用程序
+├── requirements.txt               # 依赖库
 ├── README.md                      # 项目说明文档
 
 ```
 
 ## 使用说明
+
+### 1. **安装依赖**
+```bash
+pip install -r requirements.txt
+```
+
+### 2. **运行应用程序**
+
+
 ```python
 python app.py
 ```
 
-### 1. **任务生成代理**
+## 代码示例
+
+### 1. **任务生成智能体**
 ```python
 from src.agents.task_generation_agent import TaskGenerationAgent
 
@@ -106,7 +119,7 @@ task_requests = agent.generate_tasks(user_input="监测杭州西湖交通情况"
 print(task_requests)
 ```
 
-### 2. **任务规划代理**
+### 2. **任务规划智能体**
 ```python
 from src.agents.task_planning_agent import TaskPlanningAgent
 
@@ -115,7 +128,7 @@ task_plans = agent.plan_tasks(task_requests)
 print(task_plans)
 ```
 
-### 3. **任务执行代理**
+### 3. **任务执行智能体**
 ```python
 from src.agents.task_execution_agent import TaskExecutionAgent
 
