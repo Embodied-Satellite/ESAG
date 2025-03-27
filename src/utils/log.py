@@ -1,9 +1,10 @@
 import logging
 import os
+from datetime import datetime
 
 # 定义日志文件路径
 LOG_DIR = "../../logs"
-LOG_FILE = os.path.join(LOG_DIR, "run_agent.log")
+LOG_FILE = os.path.join(LOG_DIR, f"run_agent_{datetime.now().strftime('%Y-%m-%d')}.log")
 
 # 确保日志目录存在
 os.makedirs(LOG_DIR, exist_ok=True)
