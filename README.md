@@ -96,11 +96,19 @@ ESAG/
 
 ## 使用说明
 
-运行任务规划多智能体
+### 1. **安装依赖**
+```bash
+pip install -r requirements.txt
+```
+
+### 2. **运行应用程序**
+
 
 ```python
 python app.py
 ```
+
+## 代码示例
 
 ### 1. **任务生成智能体**
 ```python
