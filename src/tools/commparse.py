@@ -79,8 +79,10 @@ class Task:
     def to_dict(self) -> Dict:
         """ 转换为字典格式，符合 output 结构 """
         return {
-            str(self.task_id):{"location": self.location,
+            "task_id": self.task_id,
+            "location": self.location,
             "LLA": [self.longitude, self.latitude, 0],
+            "task_type": self.task_type,
             "task_priority": self.task_priority,
             "time_priority": self.time_priority,
             "quality_priority": self.quality_priority,
@@ -89,7 +91,6 @@ class Task:
             "Observation_mode": "single" if self.task_type == "point_target" else "scan",
             "location_type": "area" if self.task_type == "area_target" else "point",
             "area_size": self.area_size if self.area_size else 0
-            }
         }
 
     def to_json(self) -> str:
@@ -130,7 +131,7 @@ class CommParser:
 
         task_id = 0
         coordinates = self._get_geocode(task_params["location"])
-        # weather = self._fetch_weather(coordinates["center"][0], coordinates["center"][1])
+        weather = self._fetch_weather(coordinates["center"][0], coordinates["center"][1])
         start_time, end_time = self._calculate_time_range(task_params["validity_period_days"])
 
 
@@ -144,7 +145,7 @@ class CommParser:
             quality_priority=task_params["quality_priority"],
             validity_period=(start_time, end_time),
             area_size=task_params.get("area_size"),
-            # weather=weather["cloudrate"]
+            weather=weather
         )
 
     def _parse_user_input(self, user_input: str) -> Dict:
@@ -212,21 +213,12 @@ class CommParser:
             response = requests.get(url, params={"hourlysteps": 48})
             response.raise_for_status()
             data = response.json()
-            raw_cloudrate = data.get("result", {}).get("hourly", {}).get("cloudrate", [])
-        
-            # 格式化时间
-            formatted_cloudrate = [
-                {
-                    "datetime": datetime.fromisoformat(entry["datetime"].replace("Z", "+00:00")).strftime("%Y-%m-%d %H:%M:%S"),
-                    "value": entry["value"]
-                }
-                for entry in raw_cloudrate
-            ]
+            cloudrate = data.get("result", {}).get("hourly", {}).get("cloudrate", [])
 
-            return {"cloudrate": formatted_cloudrate}
+            return [entry["value"] for entry in cloudrate]
         except requests.RequestException as e:
             logger.error(f"获取天气失败: {e}")
-        return {"cloudrate": []}
+        return []  # 发生异常时返回空列表
     
     def _calculate_time_range(self, validity_days: int) -> Tuple[str, str]:
         """计算任务的开始时间和结束时间"""
@@ -263,5 +255,6 @@ def run_gen_tool(user_input: str) -> str:
 
 if __name__ == "__main__":
     # 配置 API Keys
-    run_gen_tool()
+    user_input = "紧急获取杭州西湖的湖面"
+    run_gen_tool(user_input)
    
