@@ -1,61 +1,34 @@
 from agno.knowledge.json import JSONKnowledgeBase
+from agno.knowledge.pdf import PDFKnowledgeBase, PDFReader
+from agno.embedder.ollama import OllamaEmbedder
 from agno.vectordb.pgvector import PgVector
+from src.utils.config import load_config
 
-MODEL_ID = "qwen2.5:14b"
-FILE_PATH = '/home/mars/cyh_ws/SPA/satellite_data.json'
-db_url = "postgresql+psycopg://ai:ai@localhost:5532/ai"
+# 加载配置
+config = load_config()
+db_config = config["database"]
+file_paths = config["file_paths"]
+model_config = config["model"]
 
 def get_json_knowledge_base():
-    
     knowledge_base = JSONKnowledgeBase(
-        path=FILE_PATH,
-        # Table name: ai.json_documents
+        path=file_paths["knowledge_base_path"],
         vector_db=PgVector(
-            table_name="json_documents",
-            db_url=db_url,
-            embedder=OllamaEmbedder(id=MODEL_ID)
+            table_name=db_config["json_table"],
+            db_url=db_config["db_url"],
+            embedder=OllamaEmbedder(id=model_config["id"])
         ),
-    )  
+    )
     return knowledge_base
 
 def get_pdf_knowledge_base():
-    
     pdf_knowledge_base = PDFKnowledgeBase(
-        path=FILE_PATH,
-        # Table name: ai.pdf_documents
+        path=file_paths["knowledge_base_path"],
         vector_db=PgVector(
-            table_name="pdf_documents",
-            db_url=db_url,
-            embedder=OllamaEmbedder(id=MODEL_ID)
+            table_name=db_config["pdf_table"],
+            db_url=db_config["db_url"],
+            embedder=OllamaEmbedder(id=model_config["id"])
         ),
         reader=PDFReader(chunk=True),
     )
     return pdf_knowledge_base
-
-
-def get_doc_knowledge_base():
-    
-    knowledge_base = DocxKnowledgeBase(
-        path=FILE_PATH,
-        # Table name: ai.docx_documents
-        vector_db=PgVector(
-            table_name="docx_documents",
-            db_url=db_url,
-            embedder=OllamaEmbedder(id=MODEL_ID)
-        ),
-    )
-    return knowledge_base
-
-def get_csv_knowledge_base():
-    
-    knowledge_base = CSVKnowledgeBase(
-        path=FILE_PATH,
-        # Table name: ai.csv_documents
-        vector_db=PgVector(
-            table_name="csv_documents",
-            db_url=db_url,
-            embedder=OllamaEmbedder(id=MODEL_ID)
-        ),
-    )
-    return knowledge_base
-        

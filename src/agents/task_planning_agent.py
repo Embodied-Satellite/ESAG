@@ -4,84 +4,44 @@ from textwrap import dedent
 from agno.agent import Agent
 from agno.models.openai import OpenAIChat
 from agno.models.ollama import Ollama
+from agno.team.team import Team
 
+from src.knowledge.knowledge import get_json_knowledge_base, get_pdf_knowledge_base
 from src.utils.log import get_logger
 from src.models.LLM import Qwen2_5_LLM
 from src.tools.satellite_task_plan import SatellitePlanTool
 from src.tools.satellite_task_gen_1 import SatelliteGenTool
+from src.tools.satellite_task_exe import SatelliteExeTool
+from src.utils.config import load_config
 
 """
 模块功能：
 master_agent:负责管理整个任务调度流程。
 
-    agent_team:[task_generation_agent,task_planning_agent,task_execution_agent]
+agent_team:[task_generation_agent,task_planning_agent,task_execution_agent]
 
 task_generation_agent:负责根据卫星状态和任务请求生成任务请求列表。
 
-    input:用户请求：prompt(str)
-
-    output:任务请求列表:task_request(dict)
-        {
-            task_id: 任务编号
-            location: 目标位置名称
-            task_type: 任务类型(point_target, area_target, relay_tracking)
-            latitude: 目标纬度
-            longitude: 目标经度
-            task_priority: 任务优先级(1-5)
-            time_priority: 时间优先级(1-5)
-            quality_priority: 质量优先级(1-5)
-            validity_period: 任务有效期（开始时间, 结束时间）
-            area_size: 面积目标时的大小(km²)
-            weather: 观测目标区域的天气情况
-        }
-
 task_planning_agent:负责根据卫星状态和任务请求进行星座调度规划。
-
-    input:任务请求 + 卫星状态（能力+态势）
-    {
-        # task_generation_agent 输出：
-        task_request:任务请求{
-            ...
-        }
-        
-        # 从仿真环境获取以下信息：
-        satellite_state:卫星状态{
-        
-            卫星编号:卫星ID
-            位置：经纬度坐标
-            载荷状态：{拍摄载荷：可见光、红外}
-            能源状态：{电池电量：百分比}
-            通信状态：{信号强度：百分比}
-            太阳能帆板：角度           
-        }    
-    }
-    
-    output:任务执行清单
-    {
-        任务编号:任务ID
-        卫星编号:卫星ID
-        位置：经纬度坐标
-        观测时间:开始时间，结束时间
-        侧摆角度:角度
-        太阳能帆板：角度   
-    }
 
 task_execution_agent:负责根据星座调度规划执行指令。
 
-input:任务执行清单{
-    ...
-}
-
-# 执行仿真环境验证：
-output:执行指令{
-    ...
-}
-
 """
+
+# 配置RAG知识库
+pdf_knowledge_base = get_pdf_knowledge_base()
+pdf_knowledge_base.load(recreate=False)
+
+
+# 加载配置
+config = load_config()
+model_config = config["model"]
+MODEL_ID = model_config["id"]
 
 logger = get_logger("TaskPlanningAgent")
 
-MODEL_ID = "qwen2.5:14b"
+# MODEL_ID = "qwen2.5:14b"
+
 
 task_generation_agent = Agent(
     name="Satellite task generation Agent",
@@ -128,6 +88,7 @@ task_generation_agent = Agent(
         }}
         
     """),
+    add_datetime_to_instructions=True,
     show_tool_calls=True,
     markdown=True,
 )
@@ -155,6 +116,8 @@ task_planning_agent = Agent(
         - 以数据驱动的卫星能力规划方案结束\
         
     """),
+    
+    add_datetime_to_instructions=True,
     show_tool_calls=True,
     markdown=True,
 )
@@ -163,6 +126,7 @@ task_execution_agent = Agent(
     name="Satellite Execution Agent",
     role="负责根据星座调度规划结果执行星座调度任务。",
     model=Ollama(id=MODEL_ID),
+    tools=[SatelliteExeTool()],
     instructions=dedent("""\
 
         你是一个星座调度执行专家，负责根据星座调度规划结果执行星座调度任务。
@@ -181,15 +145,17 @@ task_execution_agent = Agent(
             
     """
     ),
+    add_datetime_to_instructions=True,
     show_tool_calls=True,
     markdown=True,
 )
     
 
-master_agent = Agent(
-    team=[task_generation_agent, task_planning_agent],
-    role="负责协调任务生成-规划-执行团队的工作分配。",
+master_agent = Team(
+    name ="Master Agent",
+    mode="coordinate",
     model=Ollama(id=MODEL_ID),
+
     instructions=dedent("""\
         你是星座调度团队的管理员，负责根据任务清单执行星座规划调度，不可伪造数据。
         
@@ -207,10 +173,11 @@ master_agent = Agent(
 
        
     """),
-    structured_outputs=True,
+    members=[task_generation_agent, task_planning_agent],
     add_datetime_to_instructions=True,
-    show_tool_calls=True,
     markdown=True,
+    # debug_mode=True,
+    show_members_responses=True,
 )
 
 try:

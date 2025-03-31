@@ -1,0 +1,22 @@
+
+# 日志配置
+logging:
+  log_dir: logs
+  log_file_prefix: run_agent
+  log_level: INFO
+
+# 数据库配置
+database:
+  db_url: "postgresql+psycopg://ai:ai@localhost:5532/ai"
+  json_table: json_documents
+  pdf_table: pdf_documents
+  docx_table: docx_documents
+  csv_table: csv_documents
+
+# 模型配置
+model:
+  id: "qwen2.5:14b"
+
+# 文件路径配置
+file_paths:
+  knowledge_base_path: "Path/to/your/file"  # Replace with your actual file path
