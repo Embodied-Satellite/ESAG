@@ -10,10 +10,9 @@
 - 添加了任务生成、任务规划和任务执行三个模块的示例输出。
 
 ### 2023-03-31
-- 更新Agno框架v1.2.6，支持 Team mode 模式；
-- 修复 knowledge 模块，支持PDF，JSON 格式；
+- 更新 Agno 框架v1.2.6，支持 Team mode 模式；
+- 修复 knowledge 模块，支持 PDF，JSON 格式；
 - 增加 config 模块，支持参数配置；
-- Add config moudule, support parameter configuration.
 
 ## 功能模块
 
