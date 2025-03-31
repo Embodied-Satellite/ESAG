@@ -27,7 +27,12 @@
       "quality_priority": 5,
       "validity_period": ["2025-03-26T00:00:00", "2025-03-28T00:00:00"],
       "area_size": null,
-      "weather": null
+      "cloudrate": [{
+        "datetime": "2025-03-30 16:00:00",
+        "value": 0.62
+      }
+      ...
+    ],
   }
 ```
 
