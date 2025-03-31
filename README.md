@@ -13,6 +13,7 @@
 - 更新Agno框架v1.2.6，支持 Team mode 模式；
 - 修复 knowledge 模块，支持PDF，JSON 格式；
 - 增加 config 模块，支持参数配置；
+- Add config moudule, support parameter configuration.
 
 ## 功能模块
 
@@ -90,6 +91,9 @@
 ##  目录结构
 ```
 ESAG/
+├── agno/                          # Agno框架
+├── config/                        # 数据文件夹
+│   ├── config.yaml                # 配置文件
 ├── src/
 │   ├── agents/
 │   │   ├── task_planning_agent.py # 任务规划多智能体
@@ -99,8 +103,11 @@ ESAG/
 │   │   ├── satellite_task_plan.py # 卫星任务规划工具
 │   │   ├── satellite_task_gen.py  # 卫星任务生成工具
 │   │   ├── satellite_task_exec.py # 卫星任务执行工具
+│   │── knowledge/
+│   │   ├── knowledge.py           # 知识数据库
 │   ├── utils/
 │   │   ├── log.py                 # 日志工具
+│   │   ├── config.py              # 配置工具
 ├── logs/                          # 日志文件夹
 ├── unittests/                     # 测试文件夹
 ├── app.py                         # app应用程序
@@ -113,7 +120,7 @@ ESAG/
 ### 0. **环境配置**
 - Python 3.10+
 - OLLAMA API: 
-```http://10.15.42.153:11434``` （或替换本地大模型）
+```http://10.15.42.153:11434``` ```qwen2.5:14b```（或替换本地大模型）
 
 ### 1. **安装依赖**
 ```bash
