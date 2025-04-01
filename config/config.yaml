@@ -14,7 +14,9 @@ database:
   csv_table: csv_documents
 
 # 模型配置
-model:
+ollama_model:
+  host: "10.15.42.153"
+  port: 11434
   id: "qwen2.5:14b"
 
 # 文件路径配置

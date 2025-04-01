@@ -16,6 +16,7 @@ import math
 import json
 from datetime import datetime, timedelta
 from skyfield.api import load, EarthSatellite, wgs84, utc
+from agno.models.ollama import Ollama
 
 # 配置日志
 logging.basicConfig(
@@ -233,24 +234,32 @@ def run_gen_tool(user_input: str) -> str:
     CAIYUN_API_KEY = os.getenv("CAIYUN_API_KEY", "67JCvZ2qyIy9B8Om")
 
     # 初始化 LLM 客户端
+    # client = Ollama(
+    #     id="qwen2.5:14b",  
+    #     host="http://localhost:11434"
+    # )
+
     client = OpenAI(
         api_key="sk-635da64c8d92404db99d83377d4b4744",
         base_url="https://dashscope.aliyuncs.com/compatible-mode/v1"
     )
 
+    print(f'client: {client}, type: {type(client)}')
     # 初始化 CommParser
     parser = CommParser(client, AMAP_KEY, CAIYUN_API_KEY)
-
-    # user_input = "紧急获取杭州西湖的湖面"
 
 
     # 解析任务
     task = parser.parse_command(user_input)
 
     # 打印解析后的任务信息
-    print("解析后的任务信息：")
-    print(task)
-    return task
+    if task:
+        print("任务解析完成，成功生成任务请求列表")
+        return task
+
+    else:
+        return("未能解析任务信息")
+
         
 
 if __name__ == "__main__":
