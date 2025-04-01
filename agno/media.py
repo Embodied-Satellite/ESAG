@@ -92,6 +92,10 @@ class Video(BaseModel):
         }
         return {k: v for k, v in response_dict.items() if v is not None}
 
+    @classmethod
+    def from_artifact(cls, artifact: VideoArtifact) -> "Video":
+        return cls(url=artifact.url)
+
 
 class Audio(BaseModel):
     content: Optional[Any] = None  # Actual audio bytes content
@@ -157,6 +161,10 @@ class Audio(BaseModel):
         }
 
         return {k: v for k, v in response_dict.items() if v is not None}
+
+    @classmethod
+    def from_artifact(cls, artifact: AudioArtifact) -> "Audio":
+        return cls(url=artifact.url, content=artifact.base64_audio, format=artifact.mime_type)
 
 
 class AudioResponse(BaseModel):
@@ -256,11 +264,15 @@ class Image(BaseModel):
 
         return {k: v for k, v in response_dict.items() if v is not None}
 
+    @classmethod
+    def from_artifact(cls, artifact: ImageArtifact) -> "Image":
+        return cls(url=artifact.url)
+
 
 class File(BaseModel):
     url: Optional[str] = None
     filepath: Optional[Union[Path, str]] = None
-    content: Optional[Any] = None
+    content: Optional[Any] = None  # Actual file bytes content
     mime_type: Optional[str] = None
 
     @model_validator(mode="before")
