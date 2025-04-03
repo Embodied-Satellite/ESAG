@@ -15,10 +15,13 @@ database:
 
 # 模型配置
 ollama_model:
-  host: "10.15.42.153"
-  port: 11434
+  host: "10.15.42.153:11434"
   id: "qwen2.5:14b"
 
 # 文件路径配置
 file_paths:
-  knowledge_base_path: "Path/to/your/file"  # Replace with your actual file path
+  knowledge: "knowledge"  # 相对路径
+  logs_dir: "logs"
+  temp_dir: "temp"
+  database_dir: "database"
+  knowledge_base_path: "knowledge_base"  # 知识库路径

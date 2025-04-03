@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 from typing import Dict, List
 from agno.tools import Toolkit
 import logging
+import uuid
 
 class SatelliteGenTool(Toolkit):
     """卫星数据获取工具包（只负责获取原始数据）"""
@@ -32,6 +33,9 @@ class SatelliteGenTool(Toolkit):
             if not all(k in params for k in required):
                 raise ValueError("Missing required parameters")
             
+            # 0. 创建任务 UUID
+            task_id = str(uuid.uuid4())
+            
             # 1. 获取坐标
             geo = self._get_geocode(params["location"])
             
@@ -44,6 +48,7 @@ class SatelliteGenTool(Toolkit):
             
             # 4. 构建结果字典并转为JSON字符串
             result = {
+                "task_id": task_id,
                 "location": params["location"],
                 "latitude": geo["lat"],
                 "longitude": geo["lng"],
@@ -51,7 +56,13 @@ class SatelliteGenTool(Toolkit):
                 "cloudrate": weather,
                 "area_size": params.get("area_km", 0),
             }
-            return json.dumps(result, ensure_ascii=False)
+            task_gen_result = json.dumps(result, ensure_ascii=False, indent=4)
+            
+            with open("task_gen_result.json", "w", encoding="utf-8") as f:
+                f.write(task_gen_result)
+                logging.info(f"Tool executed successfully: {task_gen_result}")
+            
+            return task_gen_result
             
         except Exception as e:
             logging.error(f"Tool execution failed: {str(e)}")

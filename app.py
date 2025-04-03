@@ -19,7 +19,7 @@ def main():
         response = master_agent.print_response(user_input, stream=True)
         
         # 记录日志
-        logger.info("任务调度完成，结果: %s", response)
+        logger.info("任务调度完成")
     except Exception as e:
         logger.error("任务调度失败: %s", str(e))
         print(f"任务调度失败: {e}")
