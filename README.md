@@ -26,11 +26,12 @@
   
 ```json
   {
-      "task_id": "001",
+      "task_id": "5cf097cc-81fd-4596-bf42-640e1a434d94",
       "location": "杭州西湖",
       "latitude": 30.25,
       "longitude": 120.155,
       "task_type": "point_target",
+      "Observation_mode": "single",                                                                                                                                         
       "task_priority": 5,
       "time_priority": 5,
       "quality_priority": 5,
