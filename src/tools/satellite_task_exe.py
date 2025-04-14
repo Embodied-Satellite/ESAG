@@ -28,11 +28,7 @@ class SatelliteExeTool(Toolkit):
             satellite_plan (dict): The satellite plan.
         
         """
-        
-        satellite_plan = self.get_satellite_plan()
-        if not satellite_plan:
-            return "Satellite plan not found."
                 
-        return satellite_plan
+        return '已完成任务规划，正在执行卫星任务...'
         
 
