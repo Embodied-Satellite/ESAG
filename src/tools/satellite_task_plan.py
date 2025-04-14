@@ -25,7 +25,7 @@ class SatellitePlanTool(Toolkit):
         Returns:
             str: 任务规划结果的 JSON 字符串。
         """
-        task_execute_path = os.path.join(os.getcwd(), "/home/mars/cyh_ws/ESAG/src/Tre_starlink/dataset/task_execute.json")
+        task_execute_path = os.path.join(os.getcwd(), "src/Tre_starlink/dataset/task_execute.json")
 
         # 检查文件是否存在
         if not os.path.exists(task_execute_path):
