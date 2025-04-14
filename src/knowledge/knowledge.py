@@ -8,7 +8,8 @@ from src.utils.config import load_config
 config = load_config()
 db_config = config["database"]
 file_paths = config["file_paths"]
-model_config = config["model"]
+model_config = config["ollama_model"]
+
 
 def get_json_knowledge_base():
     knowledge_base = JSONKnowledgeBase(
@@ -16,7 +17,7 @@ def get_json_knowledge_base():
         vector_db=PgVector(
             table_name=db_config["json_table"],
             db_url=db_config["db_url"],
-            embedder=OllamaEmbedder(id=model_config["id"])
+            embedder=OllamaEmbedder(id=model_config["id"], dimensions=3072)
         ),
     )
     return knowledge_base
@@ -27,7 +28,7 @@ def get_pdf_knowledge_base():
         vector_db=PgVector(
             table_name=db_config["pdf_table"],
             db_url=db_config["db_url"],
-            embedder=OllamaEmbedder(id=model_config["id"])
+            embedder=OllamaEmbedder(id=model_config["id"], dimensions=3072)
         ),
         reader=PDFReader(chunk=True),
     )

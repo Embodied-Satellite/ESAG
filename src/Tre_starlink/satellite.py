@@ -722,7 +722,7 @@ def satellite_plan_tool():
     # 定义初始化时间
     # timestamp = '2025-03-07 6:15:14.131254'
     # timestamp = '2025-03-07 6:5:14.131254'
-    timestamp = '2025-03-07 5:0:14.131254'
+    timestamp = '2025-04-08 5:0:14.131254'
     starttime = datetime.datetime.strptime(timestamp, "%Y-%m-%d %H:%M:%S.%f").timestamp()
     Planning_duration = 86400 * 2  # 规划时长24h
 
@@ -754,10 +754,15 @@ def satellite_plan_tool():
 
     # 规划+执行task update
     task_plan_result = satellite_link.run_plan(tasks)
-
-    # 返回任务规划结果
-    print(f'type(task_plan_result): {type(task_plan_result)}')
-    return task_plan_result
+    
+    if task_plan_result is None:
+        return json.dumps({"error": "No task plan generated."}, ensure_ascii=False, indent=4)
+    elif isinstance(task_plan_result, dict):
+        return json.dumps(task_plan_result, ensure_ascii=False, indent=4)
+    elif isinstance(task_plan_result, list):
+        return json.dumps({"task_plan_result": task_plan_result}, ensure_ascii=False, indent=4)
+    else:
+        return json.dumps({"error": "Unexpected task plan result format."}, ensure_ascii=False, indent=4)
 
 
 if __name__ == "__main__":

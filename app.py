@@ -12,7 +12,9 @@ def main():
     """
     try:
         # 示例用户输入
-        user_input = "监测杭州西湖交通情况，给出卫星调度建议"
+        user_input = "统计杭州市的住宅区"
+
+        # user_input = "监测杭州西湖附近交通情况"
         
         # 调用 master_agent 处理任务
         logger.info(f"开始处理用户输入: {user_input}")

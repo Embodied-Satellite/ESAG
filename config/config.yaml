@@ -17,6 +17,7 @@ database:
 ollama_model:
   host: "10.15.42.153:11434"
   id: "qwen2.5:14b"
+  temperature: 0.01
 
 # 文件路径配置
 file_paths:
@@ -24,4 +25,4 @@ file_paths:
   logs_dir: "logs"
   temp_dir: "temp"
   database_dir: "database"
-  knowledge_base_path: "knowledge_base"  # 知识库路径
+  knowledge_base_path: "/home/mars/cyh_ws/ESAG/src/knowledge/task_knowledge.json"  # 知识库路径
