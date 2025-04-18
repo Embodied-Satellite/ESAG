@@ -25,6 +25,7 @@ class SatellitePlanTool(Toolkit):
         Returns:
             str: 任务规划结果的 JSON 字符串。
         """
+
         task_execute_path = os.path.join(os.getcwd(), "src/Tre_starlink/dataset/task_execute.json")
 
         # 检查文件是否存在
@@ -63,9 +64,9 @@ class SatellitePlanTool(Toolkit):
             # 构建任务规划结果
             task_plan_result = {
                 "task_id": task_id,
-                "satellite_id": 'satellite_05',
+                "satellite_id": satellite_id,
                 "observation_time": observation_time,
-                "slew_angle": '15',
+                "slew_angle": slew_angle,
                 "solar_panel_angle": '45',  # 如果适用，可以从其他字段中提取
             }
             task_plan_results.append(task_plan_result)

@@ -1,0 +1,154 @@
+{
+    "satellite_earth_observation_knowledge_base": [
+      {
+        "task_type": "point_target",
+        "Observation_mode": "single",
+        "location_type": "point",
+        "task_priority": 1,
+        "time_priority": 1,
+        "quality_priority": 1,
+        "description": "适用于低优先级的单点目标单次观测任务，时间要求宽松，质量要求较低。",
+        "application_scenario": "适用于基础地理信息更新，如监测特定地理标志的变化，如灯塔或导航设施的状态更新。"
+      },
+      {
+        "task_type": "point_target",
+        "Observation_mode": "single",
+        "location_type": "point",
+        "task_priority": 3,
+        "time_priority": 3,
+        "quality_priority": 3,
+        "description": "适用于中等优先级的单点目标单次观测任务，时间要求适中，质量要求适中。",
+        "application_scenario": "适用于常规环境监测任务，如监测特定污染源或工业设施的排放情况。"
+      },
+      {
+        "task_type": "point_target",
+        "Observation_mode": "single",
+        "location_type": "point",
+        "task_priority": 5,
+        "time_priority": 5,
+        "quality_priority": 5,
+        "description": "适用于高优先级的单点目标单次观测任务，时间要求严格，质量要求高。",
+        "application_scenario": "适用于紧急事件响应，如监测地震或火山活动的实时数据，为灾害救援提供支持。"
+      },
+      {
+        "task_type": "point_target",
+        "Observation_mode": "continuous",
+        "location_type": "point",
+        "task_priority": 1,
+        "time_priority": 1,
+        "quality_priority": 1,
+        "description": "适用于低优先级的单点目标连续观测任务，时间要求宽松，质量要求较低。",
+        "application_scenario": "适用于长期基础研究，如监测特定天文台或气象站的长期环境变化。"
+      },
+      {
+        "task_type": "point_target",
+        "Observation_mode": "continuous",
+        "location_type": "point",
+        "task_priority": 3,
+        "time_priority": 3,
+        "quality_priority": 3,
+        "description": "适用于中等优先级的单点目标连续观测任务，时间要求适中，质量要求适中。",
+        "application_scenario": "适用于常规监测任务，如监测特定海洋浮标的实时数据，用于海洋研究。"
+      },
+      {
+        "task_type": "point_target",
+        "Observation_mode": "continuous",
+        "location_type": "point",
+        "task_priority": 5,
+        "time_priority": 5,
+        "quality_priority": 5,
+        "description": "适用于高优先级的单点目标连续观测任务，时间要求严格，质量要求高。",
+        "application_scenario": "适用于关键基础设施的实时监控，如监测核电站或大型桥梁的结构健康状况。"
+      },
+      {
+        "task_type": "area_target",
+        "Observation_mode": "single",
+        "location_type": "area",
+        "task_priority": 1,
+        "time_priority": 1,
+        "quality_priority": 1,
+        "description": "适用于低优先级的区域目标单次观测任务，时间要求宽松，质量要求较低。",
+        "application_scenario": "适用于基础地图更新，如对大面积区域进行定期地理信息采集，用于城市规划。"
+      },
+      {
+        "task_type": "area_target",
+        "Observation_mode": "single",
+        "location_type": "area",
+        "task_priority": 3,
+        "time_priority": 3,
+        "quality_priority": 3,
+        "description": "适用于中等优先级的区域目标单次观测任务，时间要求适中，质量要求适中。",
+        "application_scenario": "适用于农业监测，如对农田进行定期观测，评估作物生长状况。"
+      },
+      {
+        "task_type": "area_target",
+        "Observation_mode": "single",
+        "location_type": "area",
+        "task_priority": 5,
+        "time_priority": 5,
+        "quality_priority": 5,
+        "description": "适用于高优先级的区域目标单次观测任务，时间要求严格，质量要求高。",
+        "application_scenario": "适用于灾害响应，如对洪水或森林火灾区域进行快速观测，为救援行动提供支持。"
+      },
+      {
+        "task_type": "area_target",
+        "Observation_mode": "continuous",
+        "location_type": "area",
+        "task_priority": 1,
+        "time_priority": 1,
+        "quality_priority": 1,
+        "description": "适用于低优先级的区域目标连续观测任务，时间要求宽松，质量要求较低。",
+        "application_scenario": "适用于长期环境研究，如对大面积森林进行长期生态变化监测。"
+      },
+      {
+        "task_type": "area_target",
+        "Observation_mode": "continuous",
+        "location_type": "area",
+        "task_priority": 3,
+        "time_priority": 3,
+        "quality_priority": 3,
+        "description": "适用于中等优先级的区域目标连续观测任务，时间要求适中，质量要求适中。",
+        "application_scenario": "适用于城市扩展监测，如对城市周边区域进行定期观测，评估城市化进程。"
+      },
+      {
+        "task_type": "area_target",
+        "Observation_mode": "continuous",
+        "location_type": "area",
+        "task_priority": 5,
+        "time_priority": 5,
+        "quality_priority": 5,
+        "description": "适用于高优先级的区域目标连续观测任务，时间要求严格，质量要求高。",
+        "application_scenario": "适用于实时灾害监控，如对火山活动区域进行连续观测，提前预警潜在威胁。"
+      },
+      {
+        "task_type": "continuous_target",
+        "Observation_mode": "continuous",
+        "location_type": "area",
+        "task_priority": 1,
+        "time_priority": 1,
+        "quality_priority": 1,
+        "description": "适用于低优先级的连续目标连续观测任务，时间要求宽松，质量要求较低。",
+        "application_scenario": "适用于长期气候变化研究，如对大面积海洋区域进行长期温度和盐度监测。"
+      },
+      {
+        "task_type": "continuous_target",
+        "Observation_mode": "continuous",
+        "location_type": "area",
+        "task_priority": 3,
+        "time_priority": 3,
+        "quality_priority": 3,
+        "description": "适用于中等优先级的连续目标连续观测任务，时间要求适中，质量要求适中。",
+        "application_scenario": "适用于海洋污染监测，如对大面积海域进行定期污染物浓度监测。"
+      },
+      {
+        "task_type": "continuous_target",
+        "Observation_mode": "continuous",
+        "location_type": "area",
+        "task_priority": 5,
+        "time_priority": 5,
+        "quality_priority": 5,
+        "description": "适用于高优先级的连续目标连续观测任务，时间要求严格，质量要求高。",
+        "application_scenario": "适用于全球气候模型验证，如对大面积区域进行高分辨率观测，用于气候模型的实时校准。"
+      }
+    ]
+  }
